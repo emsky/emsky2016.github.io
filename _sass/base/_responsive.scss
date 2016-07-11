@@ -7,10 +7,10 @@
     display: none;
   }
   .sidebar {
-    left: 0;
+    
   }
   .sidebar__toggle {
-    display: none; // hide the menu button
+    display: block; // hide the menu button
   }
   .content {
     width: auto;

@@ -23,7 +23,7 @@
     </div>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar animated slideOutLeft eased">
       <!-- Heading -->
       <header class="sidebar__header">
         <div class="header__logo--normal">
@@ -43,13 +43,14 @@
       </nav>
       <!-- Footer -->
       <footer class="sidebar__footer">
-        <nav class="nav--social">
-          <ul>
+        <nav class="footer__nav">
+          <ul class="nav--social">
             <li class="nav--social__item"></li>
             <li class="nav--social__item"></li>
             <li class="nav--social__item"></li>
             <li class="nav--social__item"></li>
           </ul>
+          <p class="thanks">A big warm thanks to all my friends and family who have helped me so far.</p>
         </nav>
       </footer>
 
@@ -74,10 +75,11 @@
       });
 
     });
-
+/*
     window.onload = function() {
       console.log("LOADED");
       if ($(window).width() >= 768){
+        $('.sidebar').addClass('slideInLeft');
         $('.sidebar').removeClass('animated');
         console.log('Cleared');
       } else {
@@ -98,7 +100,7 @@
         console.log('Reanimated');
       }
     });
-
+*/
 
   </script>
 

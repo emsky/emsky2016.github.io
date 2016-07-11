@@ -19,27 +19,12 @@ body, html {
 }
 .profession {
   font-family: $tertiary-font-family;
-  font-size: $base-font-size;
+  font-size: $base-font-size - 4;
   color: $grey;
   line-height: $line-height;
   margin-left: $margin;
 }
-
-// Navigation
-.nav--main {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-.nav--main__item {
-  flex-grow: 1;
-}
-.nav--main__item a {
-  text-decoration: none;
-  display: block;
-  height: 100%;
-  background: $alpha-blue;
+.thanks {
+  font-size: 12px;
+  color: $grey;
 }

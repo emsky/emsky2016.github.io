@@ -47,9 +47,9 @@ body, html {
   top: 0;
   width: 100%;
   height: auto;
-  margin-bottom: $margin;
+  // margin-bottom: $margin;  #TODO Restore this margin on larger screens
   margin-top: 0;
-  background: $alpha-red;
+  padding: $padding;
 
 }
 .logo--personal--med {
@@ -65,24 +65,20 @@ body, html {
 }
 .sidebar__header h1 {
   margin: 0;
+  font-family: $primary-font-family-bold;
+  font-size: $base-font-size * 1.5;
   line-height: $baseline-height * 1.5;
   margin-top: -$margin * 0.5;
   font-weight: bold;
-}
-.sidebar__nav {
-  display: block;
-  width: 100%;
-  height: $baseline-height * 9;
-  background: $alpha-red;
+  letter-spacing: 2px;
 }
 .sidebar__footer {
   display: block;
   position: absolute;
-  bottom: $margin;
-  left: $margin;
-  right: $margin;
+  bottom: 0;
+  left: 0;
   width: auto;
-  min-height: $baseline-height * 4;
+  min-height: $baseline-height * 3;
   background: $alpha-red;
 }
 .sidebar__toggle {
@@ -94,7 +90,6 @@ body, html {
   width: $baseline-height * 3;
   height: $baseline-height * 3;
   padding-top: $padding / 2;
-  opacity: 0;
 }
 .sidebar__toggle span {
   display: block;
