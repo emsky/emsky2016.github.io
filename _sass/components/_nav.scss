@@ -35,10 +35,38 @@
 }
 
 // Social navigation
-.sidebar__footer {
-  background-color: $alpha-red;
-}
+
 .nav--social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
   padding-left: 0;
+  @extend %clearfix;
+}
+.nav--social__item {
+  margin-right: $margin / 2;
+}
+.nav--social__item:last-child {
+  margin-right: 0;
+}
+.nav--social__item a {
+  display: block;
+  position: relative;
+  float: left;
+  background-color: $primary-color;
+  height: $baseline-height * 2;
+  width: $baseline-height * 2;
+  border-radius: 50%;
+  color: $white;
+  text-decoration: none;
+}
+
+//This centers the icon within the button
+a [class^="icon-"] {
+  display: table-cell;
+  height: inherit;
+  width: inherit;
+  vertical-align: middle;
+  text-align: center;
 }

@@ -67,8 +67,19 @@ hr {
 }
 
 .dead-center {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translatey(-50%);
+}
+
+
+// A better clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

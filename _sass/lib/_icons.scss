@@ -26,7 +26,7 @@
 // /* FONT PATH
 //  * -------------------------- */
 
-$fonts-dir: "../../font/fontawesome/";
+$fonts-dir: "../fonts/";
 @font-face {
   font-family: 'FontAwesome';
   src: url($fonts_dir+'fontawesome-webfont.eot?v=3.2.0');
@@ -1470,4 +1470,7 @@ a .icon-flip-vertical:before {
 }
 .icon-renren:before {
   content: "\f18b";
+}
+.icon-behance:before {
+  content: "\f1b4";
 }
