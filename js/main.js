@@ -41,7 +41,9 @@ $(function(){
     jQuery(document).ready(function($) {
       $(window).load(function(){
         setTimeout(function(){
-          $('.preloader').fadeOut('fast',function(){$(this).remove();});
+          $('.preloader').addClass('animated slideOutRight');
+          $('.preloader').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$(this).remove();});
+          //$('.preloader').fadeOut(500,function(){$(this).remove();});
         },5000);
       });
     });
