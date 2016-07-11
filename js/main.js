@@ -2,7 +2,6 @@
 
   // Dealing with SVG images
 $(function(){
-  console.log('Run start');
   jQuery('img.svg').each(function(){
       var $img = jQuery(this);
       var imgID = $img.attr('id');
@@ -38,4 +37,11 @@ $(function(){
       });
   });
 
-  
+  /* Simple preloader function */
+    jQuery(document).ready(function($) {
+      $(window).load(function(){
+        setTimeout(function(){
+          $('.preloader').fadeOut('fast',function(){$(this).remove();});
+        },5000);
+      });
+    });

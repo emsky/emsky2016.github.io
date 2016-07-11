@@ -5,6 +5,19 @@
 
   <body>
 
+    <!-- My awesome preloader -->
+    <div class="preloader">
+      <div class="wrapper">
+        <span class="mouse"></span>
+        <span class="mouse"></span>
+        <span class="mouse"></span>
+        <span class="mouse"></span>
+        <span class="mouse"></span>
+        <img class="svg"  src="img/logo.svg"/>
+      </div>
+      <h2 class="animated pulse">LOADING</h2>
+    </div>
+
     <!-- Fixed Header -->
     <div class="header animated slideInDown eased">
       <div class="header__logo--small">
@@ -48,7 +61,7 @@
             <li class="nav--social__item"><a href=""><i class="icon-twitter"></i></a></li>
             <li class="nav--social__item"><a href=""><i class="icon-linkedin"></i></a></li>
             <li class="nav--social__item"><a href=""><i class="icon-github"></i></a></li>
-            <li class="nav--social__item"><a href=""><i class="icon-behance"></i></a></li>
+            <li class="nav--social__item"><a href=""><i class="icon-behance"></a></i></li>
           </ul>
 
           <p class="thanks">Copyright 2016 Ellesa Sabasaje</p>
@@ -67,41 +80,56 @@
   <script>
 
     $(document).ready(function () {
-
+      var sideBar = $('.sidebar');
+      var menu = $('.sidebar__toggle');
+      menu.hide();
       // Only in mobile
-      $('.sidebar__toggle').click(function() {
+      menu.click(function() {
         $(this).toggleClass('sidebar--is-active');
         $('.header').toggleClass('slideOutUp slideInDown');
-        $('.sidebar').toggleClass('slideOutLeft slideInLeft');
+        sideBar.toggleClass('slideOutLeft slideInLeft');
       });
 
     });
-/*
+
     window.onload = function() {
+      var sideBar = $('.sidebar');
+      var menu = $('.sidebar__toggle');
       console.log("LOADED");
       if ($(window).width() >= 768){
-        $('.sidebar').addClass('slideInLeft');
-        $('.sidebar').removeClass('animated');
-        console.log('Cleared');
+        console.log("DETECTED: Tablet and above");
+        if (sideBar.hasClass('slideOutLeft')) {
+          sideBar.removeClass('slideOutLeft').addClass('slideInLeft');
+        }
+        menu.fadeOut('fast');
       } else {
-        $('.sidebar').addClass('animated slideOutLeft eased');
-        $('.sidebar__toggle').addClass('animated fadeIn');
-        console.log('Loaded');
+        console.log("DETECTED: Phones");
+        if(sideBar.hasClass('slideInLeft')) {
+          sideBar.removeClass('slideInLeft').addClass('slideOutLeft');
+        }
+        menu.fadeIn('fast');
       }
     }
 
     // Media query
     $(window).resize(function(){
+      var sideBar = $('.sidebar');
+      var menu = $('.sidebar__toggle');
+      console.error("DETECTED: Window resize");
       if ($(window).width() >= 768){
-        $('.sidebar').addClass('slideInLeft');
-        $('.sidebar').removeClass('animated slideOutLeft');
-        console.log('Cleared');
+        if (sideBar.hasClass('slideOutLeft')) {
+          sideBar.removeClass('slideOutLeft').addClass('slideInLeft');
+        }
+        menu.fadeOut('fast');
+        console.log('Sidebar made visible');
       } else {
-        $('.sidebar').removeClass('slideInLeft');
-        console.log('Reanimated');
+        if(sideBar.hasClass('slideInLeft')) {
+          sideBar.removeClass('slideInLeft').addClass('slideOutLeft');
+        }
+        menu.fadeIn('fast');
       }
     });
-*/
+
 
   </script>
 
