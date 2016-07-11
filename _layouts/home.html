@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <!-- Fixed Header -->
+    <div class="header animated slideInDown eased">
+      <div class="header__logo--small">
+        <img class="svg logo--personal--small center-vertical" src="img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em">
+        <h1>ELLESA SABASAJE</h1>
+      </div>
+    </div>
+    <div class="toggle__wrapper">
+      <a class="sidebar__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Heading -->
+      <header class="sidebar__header">
+        <div class="header__logo--normal">
+          <img class="svg logo--personal--med center-vertical" src="img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em">
+          <h1>ELLESA SABASAJE</h1>
+        </div>
+        <h2 class="profession">Front-End Developer<br>UX Designer</h2>
+      </header>
+
+      <!-- Main Navigation -->
+      <nav class="sidebar__nav">
+        <ul class="nav--main">
+          <li class="nav--main__item"><a href="">About</a></li>
+          <li class="nav--main__item"><a href="">Work &amp; Projects</a></li>
+          <li class="nav--main__item"><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Footer -->
+      <footer class="sidebar__footer">
+        <nav class="nav--social">
+          <ul>
+            <li class="nav--social__item"></li>
+            <li class="nav--social__item"></li>
+            <li class="nav--social__item"></li>
+            <li class="nav--social__item"></li>
+          </ul>
+        </nav>
+      </footer>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+    </div>
+
+
+<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+  <script>
+
+    $(document).ready(function () {
+
+      // Only in mobile
+      $('.sidebar__toggle').click(function() {
+        $(this).toggleClass('sidebar--is-active');
+        $('.header').toggleClass('slideOutUp slideInDown');
+        $('.sidebar').toggleClass('slideOutLeft slideInLeft');
+      });
+
+    });
+
+    window.onload = function() {
+      console.log("LOADED");
+      if ($(window).width() >= 768){
+        $('.sidebar').removeClass('animated');
+        console.log('Cleared');
+      } else {
+        $('.sidebar').addClass('animated slideOutLeft eased');
+        $('.sidebar__toggle').addClass('animated fadeIn');
+        console.log('Loaded');
+      }
+    }
+
+    // Media query
+    $(window).resize(function(){
+      if ($(window).width() >= 768){
+        $('.sidebar').addClass('slideInLeft');
+        $('.sidebar').removeClass('animated slideOutLeft');
+        console.log('Cleared');
+      } else {
+        $('.sidebar').removeClass('slideInLeft');
+        console.log('Reanimated');
+      }
+    });
+
+
+  </script>
+
+  </body>
+
+</html>

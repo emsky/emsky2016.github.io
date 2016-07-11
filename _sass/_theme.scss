@@ -1,0 +1,45 @@
+body, html {
+  background-color: $silver;
+}
+
+.header {
+  @include box-shadow(0, 1px, 1px, transparentize($black, 0.9));
+  background-color: $white;
+}
+
+.logo--personal--small path {
+  fill: $red !important;
+}
+.sidebar {
+  @include box-shadow(1px, 0, 1px, transparentize($black, 0.9));
+  background-color: $white;
+}
+.logo--personal--med path {
+  fill: $red !important;
+}
+.profession {
+  font-family: $tertiary-font-family;
+  font-size: $base-font-size;
+  color: $grey;
+  line-height: $line-height;
+  margin-left: $margin;
+}
+
+// Navigation
+.nav--main {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.nav--main__item {
+  flex-grow: 1;
+}
+.nav--main__item a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  background: $alpha-blue;
+}

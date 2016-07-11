@@ -1,0 +1,30 @@
+//**
+// Responsive Styles
+//**
+
+@include mobilefirst($big-break) {
+  .header {
+    display: none;
+  }
+  .sidebar {
+    left: 0;
+  }
+  .sidebar__toggle {
+    display: none; // hide the menu button
+  }
+  .content {
+    width: auto;
+    margin-left: $sidebar-width;
+  }
+}
+
+
+
+
+
+@include responsive($small-break) {
+  // e.g. iPhone, mobile
+  body {
+    overflow-x: hidden;
+  }
+}
