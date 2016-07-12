@@ -13,6 +13,7 @@ body, html {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 98;
 }
 
 .logo--personal--small {
@@ -40,6 +41,7 @@ body, html {
   left: 0;
   height: 100%;
   width: $sidebar-width; // Full-width in mobile
+  z-index: 99;
 }
 .sidebar__header {
   display: block;
@@ -83,12 +85,13 @@ body, html {
 .sidebar__toggle {
   display: block;
   position: fixed;
-  z-index: 3;
+  z-index: 99;
   top: 0;
   right: 0;
   width: $baseline-height * 3;
   height: $baseline-height * 3;
   padding-top: $padding / 2;
+  background: transparentize($white, 0.3);
 }
 .sidebar__toggle span {
   display: block;

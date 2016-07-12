@@ -6,7 +6,7 @@
 
 html, body {
   font-family: $primary-font-family;
-  font-size: 100%;
+  font-size: $base-font-size - 2;
   font-style: normal;
   font-weight: 400;
   line-height: $line-height;
@@ -17,6 +17,7 @@ html, body {
     position: relative;
     font-family: $primary-font-family;
     z-index: -100000;
+    color: $blue;
 }
 
 .text--body {
@@ -199,6 +200,7 @@ a {
 // Responsive styles if needed
 // @include responsive($big-break) {
 // }
+/*
 @include responsive($small-break) {
   body {
     font-size: 14px;
@@ -232,7 +234,7 @@ a {
     font-size: 14px;
   }
 }
-
+*/
 // Mobile first styles if needed
 // @include mobilefirst($big-break) {
 // }
