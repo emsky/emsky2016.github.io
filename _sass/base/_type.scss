@@ -51,9 +51,11 @@ html, body {
   letter-spacing: 1px;
   padding: 0;
   margin: 0;
+//  background: transparentize(yellow, 0.7);
 }
 .list--unordered__item {
   line-height: $line-height;
+  margin-left: $margin / 2;
 }
 .list--unordered__item::before {
   font-family: FontAwesome;
@@ -61,8 +63,9 @@ html, body {
   vertical-align: top;
   line-height: $line-height;
   content: "\f105";
-  margin-right: $margin/2;
   color: $red;
+  position: absolute;
+  left: $margin;
 }
 .list--grid, .list--pane {
   padding: 0;
