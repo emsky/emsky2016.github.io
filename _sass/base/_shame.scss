@@ -1,3 +1,12 @@
 //**
 // Shameful Quick Fixes (Tidy Later)
 //**
+
+.tech-experience__icon, .tech-studying__icon {
+  // Removes the "blink" effect when clicked in iOS
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
