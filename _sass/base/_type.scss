@@ -55,17 +55,18 @@ html, body {
 }
 .list--unordered__item {
   line-height: $line-height;
-  margin-left: $margin / 2;
+  margin-left: $margin;
+  position: relative;
 }
 .list--unordered__item::before {
   font-family: FontAwesome;
-  font-size: 1.3em;
+  font-size: 1em;
   vertical-align: top;
   line-height: $line-height;
   content: "\f105";
   color: $red;
   position: absolute;
-  left: $margin;
+  left: -$margin;
 }
 .list--grid, .list--pane {
   padding: 0;
@@ -81,9 +82,9 @@ html, body {
   line-height: $line-height * 2;
   text-align: center;
   vertical-align: middle;
-  background: $alpha-red;
   margin-right: $margin / 2;
   margin-top: $margin;
+  background: $white;
 }
 .list--pane__item {
   display: table-cell;

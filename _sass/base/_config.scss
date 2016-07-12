@@ -5,7 +5,7 @@
 // Consistent settings
 $br: 5px; // Border-radius
 $btn-br: 5px; // Button border-radius
-$baseline-height: 24px; // For vertical rhythm
+$baseline-height: 20px; // For vertical rhythm
 $padding: $baseline-height; // Padding and margins
 $margin: $baseline-height;
 $line-height: $baseline-height; // Consistent height for buttons, inputs etc.
@@ -43,6 +43,7 @@ $orange: #FF851B;
 $white:  #fff;
 $silver: #F9FAFC;
 $grey:   #858B99;
+$grey-light: lighten($grey,80%);
 $black:  #4A4A4A;
 
 // Project color variables
