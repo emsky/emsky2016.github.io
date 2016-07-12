@@ -5,17 +5,18 @@
 // Consistent settings
 $br: 5px; // Border-radius
 $btn-br: 5px; // Button border-radius
-$padding: 20px; // Padding and margins
-$margin: 20px;
-$line-height: 20px; // Consistent height for buttons, inputs etc.
-$baseline-height: 20px; // For vertical rhythm
+$baseline-height: 24px; // For vertical rhythm
+$padding: $baseline-height; // Padding and margins
+$margin: $baseline-height;
+$line-height: $baseline-height; // Consistent height for buttons, inputs etc.
+
 
 // Base font settings
 $primary-font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $primary-font-family-bold: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $secondary-font-family: "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
 $tertiary-font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size: 18px;
+$base-font-size: 16px;
 
 // Responsive breakpoints
 $small-break: 480px;
@@ -58,6 +59,6 @@ $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
 
 // Transparent colors for layouts
-$alpha-red:  transparentize($red, 0.7);
-$alpha-blue: transparentize($blue, 0.5);
-$alpha-lime: transparentize($green, 0.5);
+$alpha-red:  transparentize($red, 0.85);
+$alpha-blue: transparentize($blue, 0.85);
+$alpha-lime: transparentize($green, 0.85);

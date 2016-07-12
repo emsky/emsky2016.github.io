@@ -1,0 +1,58 @@
+@mixin cssSprite( $spriteVals ) {
+  display: block; 
+	width: nth( $spriteVals, 1 );
+	height: nth( $spriteVals, 2 );
+	background-repeat: no-repeat;
+	background-image: url( #{ nth( $spriteVals, 3 ) } );
+	background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ) {
+		background-image: url( #{ nth( $spriteVals, 6 ) } );
+		background-size: $bgiSizeW $bgiSizeH;
+	}
+}
+$booksPath: '../img/books';
+$booksURL: $booksPath + '.png';
+$booksx2URL: $booksPath + '@2.png';
+$bgiSizeW: 886px;
+$bgiSizeH: 125px;
+$book-10: 82.75px 124.75px $booksURL -803px 0px $booksx2URL;
+$book-9: 82.75px 124.75px $booksURL -720.25px 0px $booksx2URL;
+$book-8: 83.25px 124.75px $booksURL -637px 0px $booksx2URL;
+$book-7: 83px 124.75px $booksURL -554px 0px $booksx2URL;
+$book-6: 85.25px 124.75px $booksURL -468.75px 0px $booksx2URL;
+$book-5: 97.25px 124.75px $booksURL -371.75px 0px $booksx2URL;
+$book-4: 83px 124.75px $booksURL -288.75px 0px $booksx2URL;
+$book-3: 97.5px 124.75px $booksURL -191.25px 0px $booksx2URL;
+$book-2: 94.75px 124.75px $booksURL -96.5px 0px $booksx2URL;
+$book-1: 96.5px 124.75px $booksURL 0px 0px $booksx2URL;
+
+.book-1 {
+  @include cssSprite($book-1);
+}
+.book-2 {
+  @include cssSprite($book-2);
+}
+.book-3 {
+  @include cssSprite($book-3);
+}
+.book-4 {
+  @include cssSprite($book-4);
+}
+.book-5 {
+  @include cssSprite($book-5);
+}
+.book-6 {
+  @include cssSprite($book-6);
+}
+.book-7 {
+  @include cssSprite($book-7);
+}
+.book-8 {
+  @include cssSprite($book-8);
+}
+.book-9 {
+  @include cssSprite($book-9);
+}
+.book-10 {
+  @include cssSprite($book-10);
+}

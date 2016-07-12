@@ -7,7 +7,7 @@
     display: none;
   }
   .sidebar {
-    
+
   }
   .sidebar__toggle {
     display: block; // hide the menu button
@@ -15,6 +15,7 @@
   .content {
     width: auto;
     margin-left: $sidebar-width;
+    margin-top: 0;
   }
 }
 

@@ -2,6 +2,17 @@ body, html {
   background-color: $silver;
 }
 
+.baseline-overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(http://basehold.it/i/20/ff0000);
+
+}
+
 .header {
   @include box-shadow(0, 1px, 1px, transparentize($black, 0.9));
   background-color: $white;
@@ -29,4 +40,9 @@ body, html {
   color: $grey;
   text-align: center;
   width: 100%;
+}
+.tech-experience__icon, .tech-studying__icon {
+  font-size: $baseline-height;
+  vertical-align: middle;
+  text-align: center;
 }

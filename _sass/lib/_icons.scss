@@ -26,14 +26,7 @@
 // /* FONT PATH
 //  * -------------------------- */
 
-$fonts-dir: "../fonts/";
-@font-face {
-  font-family: 'FontAwesome';
-  src: url($fonts_dir+'fontawesome-webfont.eot?v=3.2.0');
-  src: url($fonts_dir+'fontawesome-webfont.eot?#iefix&v=3.2.0') format('embedded-opentype'), url($fonts_dir+'fontawesome-webfont.woff?v=3.2.0') format('woff'), url($fonts_dir+'fontawesome-webfont.ttf?v=3.2.0') format('truetype'), url($fonts_dir+'fontawesome-webfont.svg#fontawesomeregular?v=3.2.0') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 /* FONT AWESOME CORE
  * -------------------------- */
 [class^="icon-"],
@@ -1473,4 +1466,497 @@ a .icon-flip-vertical:before {
 }
 .icon-behance:before {
   content: "\f1b4";
+}
+
+
+/* Technology Icons */
+
+[class^="icon-tech-"],
+[class*=" icon-tech-"] {
+  font-family: 'Technology-Icons';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+
+/* Icons */
+.icon-tech-aftereffects:before {
+	content:"\f101";
+}
+
+.icon-tech-bridge:before {
+	content:"\f102";
+}
+
+.icon-tech-dreamweaver:before {
+	content:"\f103";
+}
+
+.icon-tech-fireworks:before {
+	content:"\f104";
+}
+
+.icon-tech-flash:before {
+	content:"\f105";
+}
+
+.icon-tech-illustrator:before {
+	content:"\f106";
+}
+
+.icon-tech-indesign:before {
+	content:"\f107";
+}
+
+.icon-tech-lightroom:before {
+	content:"\f108";
+}
+
+.icon-tech-photoshop:before {
+	content:"\f109";
+}
+
+.icon-tech-cockpit:before {
+	content:"\f10a";
+}
+
+.icon-tech-drupal:before {
+	content:"\f10b";
+}
+
+.icon-tech-joomla:before {
+	content:"\f10c";
+}
+
+.icon-tech-magento:before {
+	content:"\f10d";
+}
+
+.icon-tech-october:before {
+	content:"\f10e";
+}
+
+.icon-tech-wordpress:before {
+	content:"\f10f";
+}
+
+.icon-tech-visual-studio:before {
+	content:"\f110";
+}
+
+.icon-tech-bootstrap:before {
+	content:"\f111";
+}
+
+.icon-tech-emmet:before {
+	content:"\f112";
+}
+
+.icon-tech-less:before {
+	content:"\f113";
+}
+
+.icon-tech-postcss:before {
+	content:"\f114";
+}
+
+.icon-tech-sass:before {
+	content:"\f115";
+}
+
+.icon-tech-cassandra:before {
+	content:"\f116";
+}
+
+.icon-tech-database:before {
+	content:"\f117";
+}
+
+.icon-tech-hadoop:before {
+	content:"\f118";
+}
+
+.icon-tech-mariadb:before {
+	content:"\f119";
+}
+
+.icon-tech-mongodb:before {
+	content:"\f11a";
+}
+
+.icon-tech-mysql-alt:before {
+	content:"\f11b";
+}
+
+.icon-tech-mysql:before {
+	content:"\f11c";
+}
+
+.icon-tech-postgres:before {
+	content:"\f11d";
+}
+
+.icon-tech-sql:before {
+	content:"\f11e";
+}
+
+.icon-tech-sublime:before {
+	content:"\f11f";
+}
+
+.icon-tech-express:before {
+	content:"\f120";
+}
+
+.icon-tech-grails:before {
+	content:"\f121";
+}
+
+.icon-tech-grailsalt:before {
+	content:"\f122";
+}
+
+.icon-tech-laravel-alt:before {
+	content:"\f123";
+}
+
+.icon-tech-laravel:before {
+	content:"\f124";
+}
+
+.icon-tech-phonegap:before {
+	content:"\f125";
+}
+
+.icon-tech-platter:before {
+	content:"\f126";
+}
+
+.icon-tech-playframework:before {
+	content:"\f127";
+}
+
+.icon-tech-rails-alt:before {
+	content:"\f128";
+}
+
+.icon-tech-rails:before {
+	content:"\f129";
+}
+
+.icon-tech-jira-alt:before {
+	content:"\f12a";
+}
+
+.icon-tech-jira:before {
+	content:"\f12b";
+}
+
+.icon-tech-angular:before {
+	content:"\f12c";
+}
+
+.icon-tech-backbone:before {
+	content:"\f12d";
+}
+
+.icon-tech-d3:before {
+	content:"\f12e";
+}
+
+.icon-tech-ember:before {
+	content:"\f12f";
+}
+
+.icon-tech-jquery-alt:before {
+	content:"\f130";
+}
+
+.icon-tech-jquery:before {
+	content:"\f131";
+}
+
+.icon-tech-react:before {
+	content:"\f132";
+}
+
+.icon-tech-c:before {
+	content:"\f133";
+}
+
+.icon-tech-cplusplus:before {
+	content:"\f134";
+}
+
+.icon-tech-csharp:before {
+	content:"\f135";
+}
+
+.icon-tech-haskell:before {
+	content:"\f136";
+}
+
+.icon-tech-java:before {
+	content:"\f137";
+}
+
+.icon-tech-nodejs:before {
+	content:"\f138";
+}
+
+.icon-tech-objectivec:before {
+	content:"\f139";
+}
+
+.icon-tech-perl:before {
+	content:"\f13a";
+}
+
+.icon-tech-php-alt:before {
+	content:"\f13b";
+}
+
+.icon-tech-php:before {
+	content:"\f13c";
+}
+
+.icon-tech-python:before {
+	content:"\f13d";
+}
+
+.icon-tech-ruby:before {
+	content:"\f13e";
+}
+
+.icon-tech-scala:before {
+	content:"\f13f";
+}
+
+.icon-tech-debian:before {
+	content:"\f140";
+}
+
+.icon-tech-fedora:before {
+	content:"\f141";
+}
+
+.icon-tech-freebsd:before {
+	content:"\f142";
+}
+
+.icon-tech-gnome:before {
+	content:"\f143";
+}
+
+.icon-tech-java-duke:before {
+	content:"\f144";
+}
+
+.icon-tech-kde:before {
+	content:"\f145";
+}
+
+.icon-tech-linux-mint:before {
+	content:"\f146";
+}
+
+.icon-tech-netbsd:before {
+	content:"\f147";
+}
+
+.icon-tech-rasbaerrypi:before {
+	content:"\f148";
+}
+
+.icon-tech-redhat:before {
+	content:"\f149";
+}
+
+.icon-tech-solaris:before {
+	content:"\f14a";
+}
+
+.icon-tech-suse:before {
+	content:"\f14b";
+}
+
+.icon-tech-ubuntu:before {
+	content:"\f14c";
+}
+
+.icon-tech-autoit:before {
+	content:"\f14d";
+}
+
+.icon-tech-browsersync:before {
+	content:"\f14e";
+}
+
+.icon-tech-confluence:before {
+	content:"\f14f";
+}
+
+.icon-tech-dynamicweb:before {
+	content:"\f150";
+}
+
+.icon-tech-babel:before {
+	content:"\f151";
+}
+
+.icon-tech-webpack:before {
+	content:"\f152";
+}
+
+.icon-tech-osx:before {
+	content:"\f153";
+}
+
+.icon-tech-codeignitor:before {
+	content:"\f154";
+}
+
+.icon-tech-composer:before {
+	content:"\f155";
+}
+
+.icon-tech-zend:before {
+	content:"\f156";
+}
+
+.icon-tech-apache:before {
+	content:"\f157";
+}
+
+.icon-tech-jetty:before {
+	content:"\f158";
+}
+
+.icon-tech-memcached:before {
+	content:"\f159";
+}
+
+.icon-tech-nginx-alt:before {
+	content:"\f15a";
+}
+
+.icon-tech-nginx:before {
+	content:"\f15b";
+}
+
+.icon-tech-redis:before {
+	content:"\f15c";
+}
+
+.icon-tech-tomcat:before {
+	content:"\f15d";
+}
+
+.icon-tech-ec3:before {
+	content:"\f15e";
+}
+
+.icon-tech-github-circle-alt:before {
+	content:"\f15f";
+}
+
+.icon-tech-github-circle:before {
+	content:"\f160";
+}
+
+.icon-tech-github:before {
+	content:"\f161";
+}
+
+.icon-tech-google-code:before {
+	content:"\f162";
+}
+
+.icon-tech-heroku:before {
+	content:"\f163";
+}
+
+.icon-tech-shell-alt:before {
+	content:"\f164";
+}
+
+.icon-tech-shell:before {
+	content:"\f165";
+}
+
+.icon-tech-shellscript:before {
+	content:"\f166";
+}
+
+.icon-tech-opensource:before {
+	content:"\f167";
+}
+
+.icon-tech-bower:before {
+	content:"\f168";
+}
+
+.icon-tech-grunt:before {
+	content:"\f169";
+}
+
+.icon-tech-gulp:before {
+	content:"\f16a";
+}
+
+.icon-tech-selenium:before {
+	content:"\f16b";
+}
+
+.icon-tech-git-squared:before {
+	content:"\f16c";
+}
+
+.icon-tech-git:before {
+	content:"\f16d";
+}
+
+.icon-tech-svn:before {
+	content:"\f16e";
+}
+
+.icon-tech-css-alt:before {
+	content:"\f16f";
+}
+
+.icon-tech-css3-alt:before {
+	content:"\f170";
+}
+
+.icon-tech-css3:before {
+	content:"\f171";
+}
+
+.icon-tech-html5:before {
+	content:"\f172";
+}
+
+.icon-tech-js:before {
+	content:"\f173";
+}
+
+/* Custom Icons */
+
+[class^="icon-custom-"],
+[class*=" icon-custom-"] {
+  font-family: 'Icons';
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+
+.icon-custom-sketch:before {
+  content: "\e900";
+}
+.icon-custom-omnigraffle:before {
+  content: "\e901";
 }

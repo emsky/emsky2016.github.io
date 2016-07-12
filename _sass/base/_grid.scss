@@ -5,7 +5,7 @@
 .container {
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 10px;
+  padding: 0 $padding;
 }
 
 .span1,
@@ -24,7 +24,7 @@
 }
 
 .group {
-  flex-direction: column;
+  flex-direction: column; // Causes containers to stack if display size is small
 }
 
 
@@ -32,6 +32,9 @@
 
 // Grid columns are stacked until the display size is greater than min-width
 @include mobilefirst($small-break) {
+
+  // $unit: auto;
+  // $margin: 20px; // Gutter standard
 
   $unit: 6.2056333%; // Width of each grid column unit
   $margin: 2.1277%; // Margin between the grid columns
