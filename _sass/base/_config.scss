@@ -10,6 +10,8 @@ $padding: $baseline-height; // Padding and margins
 $margin: $baseline-height;
 $line-height: $baseline-height; // Consistent height for buttons, inputs etc.
 
+// Default transition timing function
+$transition-timing-fxn: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Base font settings
 $primary-font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
