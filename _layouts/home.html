@@ -78,6 +78,12 @@
       <!-- Page masthead -->
 
 
+          <section class="masthead">
+            <img class="fluidimage" src="img/001-portrait-lg.jpg" />
+
+          </section>
+
+
       <article>
           <!-- Article/page title -->
           <div class="page__head">
@@ -196,6 +202,7 @@
                 <li class="list--unordered__item"><a class="link--text" href="http://goodui.org/">A Good User Interface</a> <br>by Jakub Linowski</li>
                 <li class="list--unordered__item"><a class="link--text" href="https://youarenotsosmart.com/2013/05/23/survivorship-bias/">Survivorship Bias</a> <br>by David McRaney</li>
                 <li class="list--unordered__item"><a class="link--text" href="http://www.joelonsoftware.com/articles/fog0000000043.html">The Joel Test: 12 Steps to Better Code</a> <br>by Joel Spolsky</li>
+                <li class="list--unordered__item"><a href="https://davidwalsh.name/responsive-images" class="link--text">Responsive Images: The Ultimate Guide</a> <br>by David Walsh</li>
               </ul>
             </div>
           </div>
@@ -251,6 +258,31 @@
         });
       });
 
+
+      // RESIZES MASTHEAD IMAGE, IF ANY WHEN WINDOW IS RESIZED AND ON PAGE LOAD
+      function imageresize() {
+        var contentwidth = $(window).width();
+        if ((contentwidth) < '768'){
+           console.log("Resize detected: small");
+            $('.fluidimage').each(function(){
+                var thisImg = $(this);
+                var newSrc = thisImg.attr('src').replace('-lg', '-sm');
+                thisImg.attr('src', newSrc);
+            });
+        } else {
+            $('.fluidimage').each(function(){
+               console.log("Resize detected: large");
+                var thisImg = $(this);
+                var newSrc = thisImg.attr('src').replace('-sm', '-md');
+                thisImg.attr('src', newSrc);
+            });
+        }
+      }
+
+      // LOAD RIGHT IMAGE
+      imageresize();
+      // REPLACE MASTHEAD IMAGE ON RESIZE
+      $(window).resize(imageresize);
     });
 
     window.onload = function() {
@@ -272,8 +304,10 @@
       }
     }
 
-    // Media query
+
     $(window).resize(function(){
+
+      // ANIMATES MENU AND SIDEBAR AS WINDOW IS RESIZED
       var sideBar = $('.sidebar');
       var menu = $('.sidebar__toggle');
       console.error("DETECTED: Window resize");
@@ -289,7 +323,10 @@
         }
         menu.fadeIn('fast');
       }
+
     });
+
+
 
 
   </script>

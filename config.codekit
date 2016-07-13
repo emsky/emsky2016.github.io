@@ -503,6 +503,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/img\/001-portrait-lg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175820,
+		"inputAbbreviatedPath": "\/_site\/img\/001-portrait-lg.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/001-portrait-lg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/001-portrait-md.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84530,
+		"inputAbbreviatedPath": "\/_site\/img\/001-portrait-md.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/001-portrait-md.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/001-portrait-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20403,
+		"inputAbbreviatedPath": "\/_site\/img\/001-portrait-sm.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/001-portrait-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/books.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -657,6 +690,39 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/img\/001-portrait-lg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175820,
+		"inputAbbreviatedPath": "\/img\/001-portrait-lg.jpg",
+		"outputAbbreviatedPath": "\/img\/001-portrait-lg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/001-portrait-md.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84530,
+		"inputAbbreviatedPath": "\/img\/001-portrait-md.jpg",
+		"outputAbbreviatedPath": "\/img\/001-portrait-md.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/001-portrait-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20403,
+		"inputAbbreviatedPath": "\/img\/001-portrait-sm.jpg",
+		"outputAbbreviatedPath": "\/img\/001-portrait-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/books.png": {
 		"fileType": 32768,

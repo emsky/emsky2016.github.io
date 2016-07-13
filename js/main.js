@@ -37,8 +37,9 @@ $(function(){
       });
   });
 
-  // SIMPLE PRELOADER FUNCTION
+
     jQuery(document).ready(function($) {
+      // SIMPLE PRELOADER FUNCTION
       $(window).load(function(){
         setTimeout(function(){
           $('.preloader').addClass('animated slideOutRight');
@@ -54,4 +55,8 @@ $(function(){
           $(this).html(techName).fadeIn('fast');
         });
       });
+
+      
+
+
     });

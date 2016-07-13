@@ -10,3 +10,9 @@
   -o-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
 }
+
+// Fallback for picture element
+img {
+    max-width: 100%;
+    height: auto;
+}
