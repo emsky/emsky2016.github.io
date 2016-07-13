@@ -3,11 +3,17 @@
 //**
 
 @include mobilefirst($big-break) {
+  html, body {
+    font-size: $base-font-size + 2;
+  }
+  // Adjust line-height
+  .text--body,
+  .list--unordered__item {
+    line-height: $line-height * 1.5;
+  }
+
   .header {
     display: none;
-  }
-  .sidebar {
-
   }
   .sidebar__toggle {
     display: block; // hide the menu button
@@ -17,8 +23,17 @@
     margin-left: $sidebar-width;
     margin-top: 0;
   }
+  .article-wrapper {
+    max-width: 960px;
+  }
   .page__title {
     font-size: $base-font-size * 2.5;
+  }
+  .text--body {
+    font-size: $base-font-size + 2;
+  }
+  .newline {
+    display: none;
   }
   .list--grid {
     width: $baseline-height * 21;
