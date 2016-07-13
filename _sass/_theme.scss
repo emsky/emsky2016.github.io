@@ -20,7 +20,7 @@ body, html {
 
 .logo--personal--small path {
   fill: $red !important;
-}
+} 
 .sidebar {
   @include box-shadow(1px, 0, 1px, transparentize($black, 0.9));
   background-color: $white;
