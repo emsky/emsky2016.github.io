@@ -47,3 +47,9 @@
     @content;
   }
 }
+
+@mixin responsiveheight($res) {
+  @media screen and (max-height: $res) {
+    @content;
+  }
+}

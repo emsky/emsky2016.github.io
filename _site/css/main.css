@@ -5712,6 +5712,15 @@ body, html {
 
   .list--grid {
     width: 420px; } }
+@media screen and (max-height: 460px) {
+  .content {
+    overflow-y: scroll; }
+
+  .sidebar {
+    overflow-y: scroll !important; }
+
+  .sidebar__footer {
+    position: relative; } }
 @media screen and (max-width: 480px) {
   body {
     overflow-x: hidden; } }

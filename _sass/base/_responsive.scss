@@ -26,7 +26,18 @@
 
 }
 
-
+@include responsiveheight(460px) {
+  // e.g. iPhone 5 rendering screen is short
+  .content {
+    overflow-y: scroll;
+  }
+  .sidebar {
+    overflow-y: scroll !important;
+  }
+  .sidebar__footer {
+    position: relative;
+  }
+}
 
 
 
