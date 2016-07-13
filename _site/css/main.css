@@ -2138,6 +2138,9 @@ a .icon-flip-vertical:before {
 .icon-tech-javascript:before {
   content: "\f173"; }
 
+.icon-codepen:before {
+  content: "\f1cb"; }
+
 /* Custom Icons */
 [class^="icon-custom-"],
 [class*=" icon-custom-"] {
