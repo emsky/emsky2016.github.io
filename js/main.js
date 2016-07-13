@@ -37,7 +37,7 @@ $(function(){
       });
   });
 
-  /* Simple preloader function */
+  // SIMPLE PRELOADER FUNCTION
     jQuery(document).ready(function($) {
       $(window).load(function(){
         setTimeout(function(){
@@ -45,5 +45,13 @@ $(function(){
           $('.preloader').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$(this).remove();});
           //$('.preloader').fadeOut(500,function(){$(this).remove();});
         },2000);
+      });
+
+      // TECH ICON TEXT REVEALER
+      $('.tech-experience__icon').on('mouseenter click', function(){
+        var techName = $(this).attr('title');
+        $('.tech-name').fadeOut('fast', function(){
+          $(this).html(techName).fadeIn('fast');
+        });
       });
     });

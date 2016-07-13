@@ -16,7 +16,6 @@ html, body {
     text-decoration: none;
     position: relative;
     font-family: $primary-font-family;
-    z-index: -100000;
     color: $blue;
 }
 
@@ -33,7 +32,6 @@ html, body {
   line-height: $line-height * 2;
   margin: $baseline-height*2 0;
   color: $black;
-  background: $alpha-red;
   letter-spacing: 0;
 }
 .page__subtitle {
@@ -106,6 +104,9 @@ html, body {
   box-shadow: 0px 16px 15px 0px rgba(0,0,0,0.10);
   color: $yellow;
   transform: translateY(-1px);
+}
+.tech-name {
+  color: $yellow;
 }
 .list--pane__item {
   display: table-cell;
