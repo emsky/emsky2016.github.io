@@ -79,7 +79,7 @@
 
 
           <section class="masthead">
-            <img class="fluidimage" src="img/001-portrait-lg.jpg" />
+            <img class="fluidimage" src="img/001-portrait@md.jpg" />
 
           </section>
 
@@ -262,27 +262,38 @@
       // RESIZES MASTHEAD IMAGE, IF ANY WHEN WINDOW IS RESIZED AND ON PAGE LOAD
       function imageresize() {
         var contentwidth = $(window).width();
-        if ((contentwidth) < '768'){
-           console.log("Resize detected: small");
-            $('.fluidimage').each(function(){
-                var thisImg = $(this);
-                var newSrc = thisImg.attr('src').replace('-lg', '-sm');
-                thisImg.attr('src', newSrc);
-            });
-        } else {
-            $('.fluidimage').each(function(){
-               console.log("Resize detected: large");
-                var thisImg = $(this);
-                var newSrc = thisImg.attr('src').replace('-sm', '-md');
-                thisImg.attr('src', newSrc);
-            });
+        var brksm = '375';
+        var brklg = '960';
+        var served = $('.fluidimage').first().attr('src').substr(this.length - 7).substr(0,3);
+        var nw  = (contentwidth < brksm) ? '@sm' : ((contentwidth >= brklg) ? '@lg' : '@md');
+
+        console.log(served == nw);
+
+        // replace only if breakpoint was crossed
+
+        if (served != nw) {
+          $('.fluidimage').each(function(){
+              var newSrc = $(this).attr('src').replace(served, nw);
+              $(this).attr('src', newSrc);
+          });
         }
+      }
+
+      function imagereposition() {
+        // Readjust masthead to fill container width
+        var cwrapper = $('.content');
+        var nw = cwrapper.outerWidth();
+        var pl = (nw - cwrapper.width()) / 2;
+        $('.masthead').width(nw).css('left', (-1)*pl);
       }
 
       // LOAD RIGHT IMAGE
       imageresize();
+      imagereposition();
       // REPLACE MASTHEAD IMAGE ON RESIZE
       $(window).resize(imageresize);
+      $(window).resize(imagereposition);
+
     });
 
     window.onload = function() {
@@ -323,7 +334,6 @@
         }
         menu.fadeIn('fast');
       }
-
     });
 
 
