@@ -81,8 +81,7 @@
       <article>
           <!-- Article/page title -->
           <div class="page__head">
-            <h3 class="page__title">Bal'a dash malanore!</h3>
-            <h5 class="page__subtitle">("Greetings, friend!" in Thalassian)</h5>
+            <h3 title="Greetings, traveler!" class="page__title greeting">Bal'a dash malanore!</h3>
           </div>
           <!-- Article body -->
           <p class="text--body">My name is Ellesa and I’m a UX designer and front-end developer based in Manila.
@@ -182,6 +181,7 @@
                   <li class="list--unordered__item">AngularJS (Advanced)</li>
                   <li class="list--unordered__item">Product Management</li>
                   <li class="list--unordered__item">Data Analysis with R</li>
+                  <li class="list--unordered__item">Babel</li>
                 </ul>
             </div>
           </div>
@@ -230,12 +230,25 @@
     $(document).ready(function () {
       var sideBar = $('.sidebar');
       var menu = $('.sidebar__toggle');
+      var greet = $('.greeting');
+
       menu.hide();
       // Only in mobile
-      menu.click(function() {
+      menu.on('click', function() {
         $(this).toggleClass('sidebar--is-active');
         $('.header').toggleClass('slideOutUp slideInDown');
         sideBar.toggleClass('slideOutLeft slideInLeft');
+      });
+
+      // Only in About page
+      greet.on('mouseover click', function(){
+        var to = $(this).attr('title');
+        var fr = $(this).html();
+        console.log(to);
+        $(this).fadeOut(1000, function(){
+          $(this).html(to).fadeIn(2000);
+          $(this).attr('title', fr);
+        });
       });
 
     });
