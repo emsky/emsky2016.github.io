@@ -2,8 +2,12 @@
 // Shameful Quick Fixes (Tidy Later)
 //**
 
-.tech-experience__icon, .tech-studying__icon {
-  // Removes the "blink" effect when clicked in iOS
+
+// Removes the "blink" effect when clicked in iOS
+.tech-experience__icon,
+.tech-studying__icon,
+.page__title,
+.sidebar__toggle {
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
   -ms-tap-highlight-color: transparent;
@@ -15,4 +19,10 @@
 img {
     width: 100%;
     height: auto;
+}
+
+// Fix for extra letter spacing when rendering some fonts in iOS
+// Source: http://stackoverflow.com/a/11879044
+.page__title {
+  font-weight: 400;
 }
