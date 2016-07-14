@@ -5170,7 +5170,15 @@ form {
   width: 40px;
   border-radius: 50%;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1); }
+
+.nav--social__item a:hover,
+.nav--social__item a:active {
+  box-shadow: 0px 16px 15px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px); }
 
 a [class^="icon-"] {
   display: table-cell;
