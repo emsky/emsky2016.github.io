@@ -32,13 +32,16 @@
   .text--body {
     font-size: $base-font-size + 2;
   }
-  .newline {
-    display: none;
-  }
   .list--grid {
     width: $baseline-height * 21;
   }
 
+}
+
+@include mobilefirst(960px) {
+  .newline {
+    display: none;
+  }
 }
 
 @include responsiveheight(460px) {

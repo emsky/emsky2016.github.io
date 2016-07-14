@@ -4657,7 +4657,8 @@ html, body {
   margin-right: 10px;
   margin-top: 20px; }
 
-.tech-experience__icon, .tech-studying__icon {
+.tech-experience__icon,
+.tech-studying__icon {
   font-size: 20px;
   display: inline-block;
   width: 100%;
@@ -4670,9 +4671,17 @@ html, body {
   -o-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1); }
 
-.tech-experience__icon:hover, .tech-experience__icon:active {
+.list--pane__item {
+  -webkit-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1); }
+
+.tech-experience__icon:hover,
+.tech-experience__icon:active,
+.list--pane__item:hover,
+.list--pane__item:active {
   background: #fff;
-  box-shadow: 0px 16px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 16px 15px 0px rgba(0, 0, 0, 0.3);
   color: #FFA348;
   transform: translateY(-1px); }
 
@@ -5726,11 +5735,11 @@ body, html {
   .text--body {
     font-size: 18px; }
 
-  .newline {
-    display: none; }
-
   .list--grid {
     width: 420px; } }
+@media screen and (min-width: 960px) {
+  .newline {
+    display: none; } }
 @media screen and (max-height: 460px) {
   .content {
     overflow-y: scroll; }
