@@ -19,14 +19,16 @@ body, html {
 }
 
 .logo--personal--small path {
-  fill: $red !important;
+  fill: $primary-color !important;
 }
 .sidebar {
-  @include box-shadow(1px, 0, 1px, transparentize($black, 0.9));
+  //@include box-shadow(1px, 0, 1px, transparentize($black, 0.9));
   background-color: $white;
+  @include box-shadow(30px, 0, 15px, transparentize(black, 0.8));
+
 }
 .logo--personal--med path {
-  fill: $red !important;
+  fill: $primary-color !important;
 }
 .profession {
   font-family: $tertiary-font-family;
@@ -46,5 +48,5 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
-  background: transparentize($red, 0.5);
+  background: transparentize($primary-color, 0.5);
 }

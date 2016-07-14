@@ -58,11 +58,12 @@ html, body {
 }
 .list--unordered__item::before {
   font-family: FontAwesome;
-  font-size: 1em;
+  font-size: $base-font-size + 2;
   vertical-align: top;
-  line-height: $line-height;
+  height: $line-height * 1.5;
+  line-height: $line-height * 1.5;
   content: "\f105";
-  color: $red;
+  color: $primary-color;
   position: absolute;
   left: -$margin;
 }

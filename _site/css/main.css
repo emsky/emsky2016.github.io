@@ -4630,11 +4630,12 @@ html, body {
 
 .list--unordered__item::before {
   font-family: FontAwesome;
-  font-size: 1em;
+  font-size: 18px;
   vertical-align: top;
-  line-height: 20px;
+  height: 30px;
+  line-height: 30px;
   content: "\f105";
-  color: #69CCF0;
+  color: #C41F3B;
   position: absolute;
   left: -20px; }
 
@@ -4692,7 +4693,7 @@ html, body {
   display: table-cell;
   margin-right: 20px;
   margin-top: 20px;
-  background: rgba(105, 204, 240, 0.15); }
+  background: rgba(196, 31, 59, 0.15); }
 
 .heading--primary {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4781,7 +4782,7 @@ code {
   word-wrap: break-word; }
 
 a {
-  color: #69CCF0; }
+  color: #C41F3B; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -4956,8 +4957,8 @@ button {
 .btn {
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #69CCF0;
-  color: #69CCF0;
+  border: 1px solid #C41F3B;
+  color: #C41F3B;
   display: inline-block;
   height: 20px;
   outline: none;
@@ -4966,25 +4967,25 @@ button {
   text-decoration: none;
   text-transform: capitalize; }
   .btn:hover, .btn:focus {
-    background: #69CCF0;
-    border-color: #69CCF0;
+    background: #C41F3B;
+    border-color: #C41F3B;
     color: #fff;
     text-decoration: none; }
   .btn:active {
-    background: #3bbceb;
-    border-color: #3bbceb; }
+    background: #98182e;
+    border-color: #98182e; }
 
 .btn-primary {
-  background-color: #69CCF0;
-  border-color: #69CCF0;
+  background-color: #C41F3B;
+  border-color: #C41F3B;
   color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #52c4ee;
-    border-color: #52c4ee;
+    background: #ae1c34;
+    border-color: #ae1c34;
     color: #fff; }
   .btn-primary:active {
-    background: #3bbceb;
-    border-color: #3bbceb;
+    background: #98182e;
+    border-color: #98182e;
     color: #fff; }
 
 .btn-lg {
@@ -5001,12 +5002,12 @@ button {
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: #69CCF0;
+  color: #C41F3B;
   text-shadow: none;
   text-transform: none; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
-    color: #69CCF0;
+    color: #C41F3B;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -5049,7 +5050,7 @@ textarea {
   input[type=number]:focus,
   input[type=search]:focus,
   textarea:focus {
-    border-color: #69CCF0; }
+    border-color: #C41F3B; }
   input[type=text].full-width,
   input[type=email].full-width,
   input[type=phone].full-width,
@@ -5072,7 +5073,7 @@ form {
   form .is-required {
     font-style: italic; }
   form .has-error .error-description {
-    color: #69CCF0;
+    color: #C41F3B;
     margin-top: 5px; }
   form .has-error input[type=text],
   form .has-error input[type=email],
@@ -5081,7 +5082,7 @@ form {
   form .has-error input[type=number],
   form .has-error input[type=search],
   form .has-error textarea {
-    border-color: #69CCF0; }
+    border-color: #C41F3B; }
 
 .alert {
   zoom: 1;
@@ -5096,9 +5097,9 @@ form {
   .alert:after {
     clear: both; }
   .alert.alert-danger {
-    background: white;
-    border-color: #69CCF0;
-    color: #23b4e9; }
+    background: #f1a5b2;
+    border-color: #C41F3B;
+    color: #821527; }
   .alert.alert-success {
     background: #f1faf3;
     border-color: #45C15C;
@@ -5158,13 +5159,9 @@ form {
 
 .nav--main__item a:hover,
 .nav--main__item a:active {
-  color: #69CCF0;
+  color: #C41F3B;
   transform: translateY(-1px);
-  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  -webkit-box-shadow: 0px 9px 14px rgba(133, 139, 153, 0.5);
-  -moz-box-shadow: 0px 9px 14px rgba(133, 139, 153, 0.5);
-  box-shadow: 0px 9px 14px rgba(133, 139, 153, 0.5);
-  border-bottom: 1px solid white; }
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .nav--social {
   display: flex;
@@ -5183,7 +5180,7 @@ form {
   display: block;
   position: relative;
   float: left;
-  background-color: #69CCF0;
+  background-color: #C41F3B;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -5355,7 +5352,7 @@ hr {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #69CCF0; }
+  background: #C41F3B; }
 
 .preloader h2 {
   text-align: center;
@@ -5666,7 +5663,7 @@ body, html {
   display: block;
   height: 1px;
   width: 25px;
-  background-color: #69CCF0;
+  background-color: #C41F3B;
   margin: 8.33px auto 0;
   transition: 1s all cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -5696,7 +5693,7 @@ body, html {
   display: block;
   height: 100%;
   width: 100%;
-  background: rgba(255, 0, 0, 0.5); }
+  background: rgba(196, 31, 59, 0.5); }
 
 body, html {
   background-color: #F9FAFC; }
@@ -5717,16 +5714,16 @@ body, html {
   background-color: #fff; }
 
 .logo--personal--small path {
-  fill: #69CCF0 !important; }
+  fill: #C41F3B !important; }
 
 .sidebar {
-  -webkit-box-shadow: 1px 0 1px rgba(74, 74, 74, 0.1);
-  -moz-box-shadow: 1px 0 1px rgba(74, 74, 74, 0.1);
-  box-shadow: 1px 0 1px rgba(74, 74, 74, 0.1);
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-box-shadow: 30px 0 15px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 30px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 30px 0 15px rgba(0, 0, 0, 0.2); }
 
 .logo--personal--med path {
-  fill: #69CCF0 !important; }
+  fill: #C41F3B !important; }
 
 .profession {
   font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5746,7 +5743,7 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(105, 204, 240, 0.5); }
+  background: rgba(196, 31, 59, 0.5); }
 
 @media screen and (min-width: 768px) {
   html, body {
@@ -5768,7 +5765,8 @@ body, html {
     margin-top: 0; }
 
   .article-wrapper {
-    max-width: 960px; }
+    max-width: 960px;
+    padding: 20px; }
 
   .page__title {
     font-size: 40px; }
