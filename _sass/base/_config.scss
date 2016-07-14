@@ -33,9 +33,9 @@ $sidebar-width: 250px;
 
 // Better default colors
 // Cool
-$blue:  #4DB7FF;
+$blue:  #69CCF0; // $mage blue
 $aqua:  #00FF96;
-$red:   #FF504E;
+$red:   #69CCF0; // Death Knight Red
 $yellow: #FFA348;
 
 $green: #45C15C;
@@ -49,7 +49,7 @@ $grey-light: lighten($grey,80%);
 $black:  #4A4A4A;
 
 // Project color variables
-$primary-color: $red;
+$primary-color: $blue;
 $secondary-color: #233e5b;
 $tertiary-color: #aaa;
 

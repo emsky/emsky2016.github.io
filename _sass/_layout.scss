@@ -123,3 +123,10 @@ body, html {
   display: inline-block;
   position: relative;
 }
+.fluidimage::before {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: transparentize(red, 0.5);
+}

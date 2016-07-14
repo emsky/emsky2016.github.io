@@ -41,3 +41,10 @@ body, html {
   text-align: center;
   width: 100%;
 }
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparentize($red, 0.5);
+}
