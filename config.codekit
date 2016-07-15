@@ -572,17 +572,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/apple-touch-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 814,
-		"inputAbbreviatedPath": "\/_site\/apple-touch-icon.png",
-		"outputAbbreviatedPath": "\/_site\/apple-touch-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/_site\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -592,116 +581,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/favicon-16x16.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 696,
-		"inputAbbreviatedPath": "\/_site\/favicon-16x16.png",
-		"outputAbbreviatedPath": "\/_site\/favicon-16x16.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/favicon-32x32.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 780,
-		"inputAbbreviatedPath": "\/_site\/favicon-32x32.png",
-		"outputAbbreviatedPath": "\/_site\/favicon-32x32.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/001-portrait@lg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.10326e+06,
-		"inputAbbreviatedPath": "\/_site\/img\/001-portrait@lg.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/001-portrait@lg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/001-portrait@md.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 456978,
-		"inputAbbreviatedPath": "\/_site\/img\/001-portrait@md.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/001-portrait@md.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/001-portrait@sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 105013,
-		"inputAbbreviatedPath": "\/_site\/img\/001-portrait@sm.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/001-portrait@sm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/books.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 199096,
-		"inputAbbreviatedPath": "\/_site\/img\/books.png",
-		"outputAbbreviatedPath": "\/_site\/img\/books.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/books@2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 698724,
-		"inputAbbreviatedPath": "\/_site\/img\/books@2.png",
-		"outputAbbreviatedPath": "\/_site\/img\/books@2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/cat.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 203167,
-		"inputAbbreviatedPath": "\/_site\/img\/cat.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/cat.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/cat@2x.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 315584,
-		"inputAbbreviatedPath": "\/_site\/img\/cat@2x.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/cat@2x.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/sp.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6196,
-		"inputAbbreviatedPath": "\/_site\/img\/sp.png",
-		"outputAbbreviatedPath": "\/_site\/img\/sp.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/_site\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -710,39 +589,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/js\/jquery-1.10.1.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/js\/jquery-1.10.1.min.js",
-		"outputAbbreviatedPath": "\/_site\/js\/min\/jquery-1.10.1.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/_site\/js\/main.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/js\/main.js",
-		"outputAbbreviatedPath": "\/_site\/js\/min\/main-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/_site\/js\/scrambler.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/js\/scrambler.js",
-		"outputAbbreviatedPath": "\/_site\/js\/min\/scrambler-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
 		},
 	"\/_site\/posts\/2016-07-11-welcome-to-jekyll\/index.html": {
 		"fileType": 8192,
@@ -761,27 +607,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/README.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/README.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/_site\/README.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
 		},
 	"\/apple-touch-icon.png": {
 		"fileType": 32768,
