@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700,900,300);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -4580,35 +4580,43 @@ a .icon-flip-vertical:before {
   font-weight: normal;
   font-style: normal; }
 html, body {
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   color: #4A4A4A; }
 
+.fancy {
+  font-family: Calendas;
+  font-style: italic;
+  font-size: 18px;
+  color: #C90E29; }
+
 .link--text {
   text-decoration: none;
   position: relative;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #69CCF0; }
 
 .text--body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   line-height: 20px;
-  letter-spacing: 1px;
   margin-bottom: 20px; }
 
 .page__title {
-  font-family: "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
   font-size: 28.8px;
   line-height: 40px;
   margin: 40px 0;
-  color: #4A4A4A; }
+  color: #4A4A4A;
+  text-transform: uppercase; }
 
 .page__subtitle {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 8px;
+  font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10.66667px;
+  font-weight: 300;
   color: #858B99;
   letter-spacing: 1px;
   line-height: 20px;
@@ -4618,8 +4626,7 @@ html, body {
 
 .list--unordered {
   list-style: none;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 1px;
+  font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0; }
 
@@ -4635,7 +4642,7 @@ html, body {
   height: 30px;
   line-height: 30px;
   content: "\f105";
-  color: #C41F3B;
+  color: #C90E29;
   position: absolute;
   left: -20px; }
 
@@ -4693,10 +4700,10 @@ html, body {
   display: table-cell;
   margin-right: 20px;
   margin-top: 20px;
-  background: rgba(196, 31, 59, 0.15); }
+  background: rgba(201, 14, 41, 0.15); }
 
 .heading--primary {
-  font-family: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   margin-top: 40px; }
@@ -4782,7 +4789,7 @@ code {
   word-wrap: break-word; }
 
 a {
-  color: #C41F3B; }
+  color: #C90E29; }
   a:hover, a:focus {
     text-decoration: none; }
 
@@ -4957,8 +4964,8 @@ button {
 .btn {
   border-radius: 5px;
   background: transparent;
-  border: 1px solid #C41F3B;
-  color: #C41F3B;
+  border: 1px solid #C90E29;
+  color: #C90E29;
   display: inline-block;
   height: 20px;
   outline: none;
@@ -4967,25 +4974,25 @@ button {
   text-decoration: none;
   text-transform: capitalize; }
   .btn:hover, .btn:focus {
-    background: #C41F3B;
-    border-color: #C41F3B;
+    background: #C90E29;
+    border-color: #C90E29;
     color: #fff;
     text-decoration: none; }
   .btn:active {
-    background: #98182e;
-    border-color: #98182e; }
+    background: #990b1f;
+    border-color: #990b1f; }
 
 .btn-primary {
-  background-color: #C41F3B;
-  border-color: #C41F3B;
+  background-color: #C90E29;
+  border-color: #C90E29;
   color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #ae1c34;
-    border-color: #ae1c34;
+    background: #b10c24;
+    border-color: #b10c24;
     color: #fff; }
   .btn-primary:active {
-    background: #98182e;
-    border-color: #98182e;
+    background: #990b1f;
+    border-color: #990b1f;
     color: #fff; }
 
 .btn-lg {
@@ -5002,12 +5009,12 @@ button {
   box-shadow: none;
   background: transparent;
   border: 0;
-  color: #C41F3B;
+  color: #C90E29;
   text-shadow: none;
   text-transform: none; }
   .btn-link:hover, .btn-link:focus {
     background: transparent;
-    color: #C41F3B;
+    color: #C90E29;
     text-decoration: underline; }
 
 @media screen and (max-width: 480px) {
@@ -5050,7 +5057,7 @@ textarea {
   input[type=number]:focus,
   input[type=search]:focus,
   textarea:focus {
-    border-color: #C41F3B; }
+    border-color: #C90E29; }
   input[type=text].full-width,
   input[type=email].full-width,
   input[type=phone].full-width,
@@ -5073,7 +5080,7 @@ form {
   form .is-required {
     font-style: italic; }
   form .has-error .error-description {
-    color: #C41F3B;
+    color: #C90E29;
     margin-top: 5px; }
   form .has-error input[type=text],
   form .has-error input[type=email],
@@ -5082,7 +5089,7 @@ form {
   form .has-error input[type=number],
   form .has-error input[type=search],
   form .has-error textarea {
-    border-color: #C41F3B; }
+    border-color: #C90E29; }
 
 .alert {
   zoom: 1;
@@ -5097,9 +5104,9 @@ form {
   .alert:after {
     clear: both; }
   .alert.alert-danger {
-    background: #f1a5b2;
-    border-color: #C41F3B;
-    color: #821527; }
+    background: #f792a1;
+    border-color: #C90E29;
+    color: #81091a; }
   .alert.alert-success {
     background: #f1faf3;
     border-color: #45C15C;
@@ -5147,7 +5154,7 @@ form {
   line-height: 60px;
   padding-left: 40px;
   color: #4A4A4A;
-  font-weight: bold;
+  font-weight: 300;
   -webkit-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   -o-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
   transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1); }
@@ -5159,7 +5166,7 @@ form {
 
 .nav--main__item a:hover,
 .nav--main__item a:active {
-  color: #C41F3B;
+  color: #C90E29;
   transform: translateY(-1px);
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
@@ -5180,7 +5187,7 @@ form {
   display: block;
   position: relative;
   float: left;
-  background-color: #C41F3B;
+  background-color: #C90E29;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -5352,7 +5359,7 @@ hr {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #C41F3B; }
+  background: #C90E29; }
 
 .preloader h2 {
   text-align: center;
@@ -5633,12 +5640,11 @@ body, html {
 
 .sidebar__header h1 {
   margin: 0;
-  font-family: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   margin-top: -10px;
-  font-weight: bold;
-  letter-spacing: 2px; }
+  font-weight: 400; }
 
 .sidebar__footer {
   display: block;
@@ -5663,7 +5669,7 @@ body, html {
   display: block;
   height: 1px;
   width: 25px;
-  background-color: #C41F3B;
+  background-color: #C90E29;
   margin: 8.33px auto 0;
   transition: 1s all cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -5684,16 +5690,17 @@ body, html {
   margin-top: 60px;
   overflow-x: hidden; }
 
+.article-wrapper {
+  padding: 0 10px; }
+
 .masthead {
-  display: inline-block;
+  display: block;
+  height: auto;
   position: relative; }
 
-.fluidimage::before {
-  position: absolute;
+.fluidimage {
   display: block;
-  height: 100%;
-  width: 100%;
-  background: rgba(196, 31, 59, 0.5); }
+  vertical-align: baseline; }
 
 body, html {
   background-color: #F9FAFC; }
@@ -5714,7 +5721,7 @@ body, html {
   background-color: #fff; }
 
 .logo--personal--small path {
-  fill: #C41F3B !important; }
+  fill: #C90E29 !important; }
 
 .sidebar {
   background-color: #fff;
@@ -5723,11 +5730,12 @@ body, html {
   box-shadow: 30px 0 15px rgba(0, 0, 0, 0.2); }
 
 .logo--personal--med path {
-  fill: #C41F3B !important; }
+  fill: #C90E29 !important; }
 
 .profession {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
+  font-weight: 400;
   color: #858B99;
   line-height: 20px;
   margin-left: 20px; }
@@ -5737,13 +5745,6 @@ body, html {
   color: #858B99;
   text-align: center;
   width: 100%; }
-
-.overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(196, 31, 59, 0.5); }
 
 @media screen and (min-width: 768px) {
   html, body {
@@ -5769,7 +5770,8 @@ body, html {
     padding: 20px; }
 
   .page__title {
-    font-size: 40px; }
+    font-size: 48px;
+    line-height: 60px; }
 
   .text--body {
     font-size: 18px; }

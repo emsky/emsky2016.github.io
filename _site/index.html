@@ -76,8 +76,8 @@
   <!-- Main Navigation -->
   <nav class="sidebar__nav">
     <ul class="nav--main">
-      <li class="nav--main__item"><a href="">About</a></li>
-      <li class="nav--main__item"><a href="">Work &amp; Projects</a></li>
+      <li class="nav--main__item"><a href="/">About</a></li>
+      <li class="nav--main__item"><a href="/projects">Work &amp; Projects</a></li>
       <li class="nav--main__item"><a href="">Contact</a></li>
     </ul>
   </nav>
@@ -102,22 +102,24 @@
     <div class="container content">
       <!-- Page masthead -->
   <section class="masthead">
-    <div class="overlay"></div>
     <img class="fluidimage" src="img/001-portrait@md.jpg" />
+
   </section>
   <div class="article-wrapper">
   <article>
 
-    </div>
 
-    <div class="article-wrapper">
-      <article>
-        <!-- Article/page title -->
-<div class="page__head">
-  <h3 title="Greetings, traveler!" class="page__title greeting">Bal'a dash malanore!</h3>
-</div>
+
+      <div class="article-wrapper">
+        <article>
+          <!-- Article/page title -->
+          <div class="page__head">
+            <h3 title="Greetings, traveler!" class="page__title greeting">Bal'a dash malanore!</h3>
+          </div>
+
+          
 <!-- Article body -->
-<p class="text--body">My name is Ellesa and I’m a UX designer and front-end developer based in Manila. I focus on designing and shipping applications that offer users an enjoyable, meaningful experience.</p>
+<p class="text--body">My name is Ellesa and I’m a UX <span class="fancy">designer</span> and front-end <span class="fancy">developer</span> based in Manila. I focus on designing and shipping applications that offer users an enjoyable, meaningful experience.</p>
 
 <p class="text--body">Typically, this process includes discovery, user research, brainstorming, wire framing, prototyping, testing, visual design, writing code and working closely with teams. Here are some of the tools I use.</p>
 
@@ -278,8 +280,12 @@
   </div>
 </div>
 
-      </article>
+        </article>
+      </div>
+
     </div>
+
+
 
     <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
   <script>
@@ -317,7 +323,6 @@
         var served = $('.fluidimage').first().attr('src').substr(this.length - 7).substr(0,3);
         var nw  = (contentwidth < brksm) ? '@sm' : ((contentwidth >= brklg) ? '@lg' : '@md');
 
-        console.log(served == nw);
 
         // replace only if breakpoint was crossed
 
@@ -327,6 +332,10 @@
               $(this).attr('src', newSrc);
           });
         }
+
+        // adjust container height
+
+
       }
 
       function imagereposition() {
@@ -334,6 +343,7 @@
         var cwrapper = $('.content');
         var nw = cwrapper.outerWidth();
         var pl = (nw - cwrapper.width()) / 2;
+
         $('.masthead').width(nw).css('left', (-1)*pl);
       }
 

@@ -5,7 +5,7 @@ greeting: "Bal'a dash malanore!"
 greeting_trans: "Greetings, traveler!"
 ---
 {:.text--body}
-My name is Ellesa and I’m a UX designer and front-end developer based in Manila. I focus on designing and shipping applications that offer users an enjoyable, meaningful experience.
+My name is Ellesa and I’m a UX <span class="fancy">designer</span> and front-end <span class="fancy">developer</span> based in Manila. I focus on designing and shipping applications that offer users an enjoyable, meaningful experience.
 
 {:.text--body}
 Typically, this process includes discovery, user research, brainstorming, wire framing, prototyping, testing, visual design, writing code and working closely with teams. Here are some of the tools I use.

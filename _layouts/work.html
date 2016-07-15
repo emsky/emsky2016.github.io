@@ -10,14 +10,27 @@
     {% include sidebar.html %}
 
     <div class="container content">
-      {% include masthead.html %}
+      <!-- No masthead -->
+
+      <div class="article-wrapper">
+        <article>
+          <!-- Article/page title -->
+          <div class="page__head">
+            <h3 class="page__title">{{ page.article_title }}</h3>
+            <h4 class="page__subtitle">{{ page.article_subtitle }}</h4>
+          </div>
+
+          <!-- Article body -->
+          {{ page.content }}
+
+          <!-- Work and project panes -->
+
+        </article>
+      </div>
+
     </div>
 
-    <div class="article-wrapper">
-      <article>
-        {% include intro.html %}
-      </article>
-    </div>
+
 
     {% include footer.html %}
 

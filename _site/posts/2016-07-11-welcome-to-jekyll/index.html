@@ -10,7 +10,7 @@
   <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://emsky.github.io/blog/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://emsky.github.io/posts/2016-07-11-welcome-to-jekyll/">
   <link rel="alternate" type="application/rss+xml" title="ELLESA SABASAJE | UX Designer and Front-end Developer" href="http://emsky.github.io/feed.xml">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -69,7 +69,7 @@
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>. Test new folder</p>
 
 
   </div>
@@ -115,7 +115,6 @@
         var served = $('.fluidimage').first().attr('src').substr(this.length - 7).substr(0,3);
         var nw  = (contentwidth < brksm) ? '@sm' : ((contentwidth >= brklg) ? '@lg' : '@md');
 
-        console.log(served == nw);
 
         // replace only if breakpoint was crossed
 
@@ -125,6 +124,10 @@
               $(this).attr('src', newSrc);
           });
         }
+
+        // adjust container height
+
+
       }
 
       function imagereposition() {
@@ -132,6 +135,7 @@
         var cwrapper = $('.content');
         var nw = cwrapper.outerWidth();
         var pl = (nw - cwrapper.width()) / 2;
+
         $('.masthead').width(nw).css('left', (-1)*pl);
       }
 

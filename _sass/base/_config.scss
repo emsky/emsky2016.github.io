@@ -14,10 +14,10 @@ $line-height: $baseline-height; // Consistent height for buttons, inputs etc.
 $transition-timing-fxn: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Base font settings
-$primary-font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$primary-font-family-bold: "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$secondary-font-family: "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
-$tertiary-font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$primary-font-family-bold: "Work Sans", "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$secondary-font-family: "Work Sans", "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
+$tertiary-font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size: 16px;
 
 // Responsive breakpoints
@@ -35,7 +35,7 @@ $sidebar-width: 250px;
 // Cool
 $blue:  #69CCF0; // $mage blue
 $aqua:  #00FF96;
-$red:   #C41F3B; // Death Knight Red
+$red:   #C90E29; // Death Knight Red
 $yellow: #FFA348;
 
 $green: #45C15C;

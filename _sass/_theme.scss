@@ -33,6 +33,7 @@ body, html {
 .profession {
   font-family: $tertiary-font-family;
   font-size: $base-font-size - 4;
+  font-weight: 400;
   color: $grey;
   line-height: $line-height;
   margin-left: $margin;
@@ -42,11 +43,4 @@ body, html {
   color: $grey;
   text-align: center;
   width: 100%;
-}
-.overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparentize($primary-color, 0.5);
 }

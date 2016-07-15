@@ -34,7 +34,6 @@
         var served = $('.fluidimage').first().attr('src').substr(this.length - 7).substr(0,3);
         var nw  = (contentwidth < brksm) ? '@sm' : ((contentwidth >= brklg) ? '@lg' : '@md');
 
-        console.log(served == nw);
 
         // replace only if breakpoint was crossed
 
@@ -44,6 +43,10 @@
               $(this).attr('src', newSrc);
           });
         }
+
+        // adjust container height
+
+
       }
 
       function imagereposition() {
@@ -51,6 +54,7 @@
         var cwrapper = $('.content');
         var nw = cwrapper.outerWidth();
         var pl = (nw - cwrapper.width()) / 2;
+
         $('.masthead').width(nw).css('left', (-1)*pl);
       }
 

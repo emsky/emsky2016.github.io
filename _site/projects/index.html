@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
+  <title>Work and Projects</title>
   <meta name="description" content="My name is Ellesa and I’m a UX designer and front-end developer based in Manila. I focus on designing and shipping applications that offer users an enjoyable, meaningful experience.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://emsky.github.io/about/">
+  <link rel="canonical" href="http://emsky.github.io/projects/">
   <link rel="alternate" type="application/rss+xml" title="ELLESA SABASAJE | UX Designer and Front-end Developer" href="http://emsky.github.io/feed.xml">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -30,6 +30,19 @@
 
   <body>
 
+    <!-- My awesome preloader -->
+<div class="preloader">
+  <div class="wrapper">
+    <span class="mouse"></span>
+    <span class="mouse"></span>
+    <span class="mouse"></span>
+    <span class="mouse"></span>
+    <span class="mouse"></span>
+    <img class="svg"  src="img/logo.svg"/>
+  </div>
+  <h2 class="animated flash">LOADING</h2>
+</div>
+
     <!-- Fixed Header -->
 <div class="header animated slideInDown eased">
   <div class="header__logo--small">
@@ -47,24 +60,68 @@
   </a>
 </div>
 
+    <!-- Fixed sidebar in desktop and tablet, Sliding menu in mobile, static on home page -->
 
-    <div class="page-content">
-      <div class="wrapper">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
+<!-- Sidebar -->
+<div class="sidebar animated slideOutLeft eased">
+  <!-- Heading -->
+  <header class="sidebar__header">
+    <div class="header__logo--normal">
+      <img class="svg logo--personal--med center-vertical" src="img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em">
+      <h1>ELLESA SABASAJE</h1>
+    </div>
+    <h2 class="profession">Front-End Developer<br>UX Designer</h2>
   </header>
 
-  <div class="post-content">
-    <p>This is my about file</p>
+  <!-- Main Navigation -->
+  <nav class="sidebar__nav">
+    <ul class="nav--main">
+      <li class="nav--main__item"><a href="/">About</a></li>
+      <li class="nav--main__item"><a href="/projects">Work &amp; Projects</a></li>
+      <li class="nav--main__item"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Footer -->
+  <footer class="sidebar__footer">
+    <nav class="footer__nav">
+      <ul class="nav--social">
+        <li class="nav--social__item"><a href="https://twitter.com/ezakaze"><i class="icon-twitter"></i></a></li>
+        <li class="nav--social__item"><a href="https://www.linkedin.com/in/ellesa
+"><i class="icon-linkedin"></i></a></li>
+        <li class="nav--social__item"><a href="http://github.com/emsky"><i class="icon-github"></i></a></li>
+        <li class="nav--social__item"><a href="http://codepen.io/emsky/"><i class="icon-codepen"></a></i></li>
+      </ul>
 
-  </div>
+      <p class="thanks">Copyright 2016 Ellesa Sabasaje</p>
+    </nav>
+  </footer>
 
-</article>
+</div>
 
+
+    <div class="container content">
+      <!-- No masthead -->
+
+      <div class="article-wrapper">
+        <article>
+          <!-- Article/page title -->
+          <div class="page__head">
+            <h3 class="page__title">Work & Projects</h3>
+            <h4 class="page__subtitle">A Showcase of Development, Design and Experiments</h4>
+          </div>
+
+          <!-- Article body -->
+          <p class="text--body">Over the past years, I’ve had the pleasure of working with startups and companies around the world. Allow me to walk you through each major case study. Click on a panel below to begin the journey.</p>
+
+
+          <!-- Work and project panes -->
+
+        </article>
       </div>
+
     </div>
+
+
 
     <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
   <script>

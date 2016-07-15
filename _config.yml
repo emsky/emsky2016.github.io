@@ -17,4 +17,4 @@ github_username:  emsky
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:title.html 
+permalink: /posts/:title.html  

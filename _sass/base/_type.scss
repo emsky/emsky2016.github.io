@@ -12,6 +12,12 @@ html, body {
   line-height: $line-height;
   color: $primary-text-color;
 }
+.fancy {
+  font-family: Calendas;
+  font-style: italic;
+  font-size: $base-font-size + 2;
+  color: $red;
+}
 .link--text {
     text-decoration: none;
     position: relative;
@@ -20,9 +26,9 @@ html, body {
 }
 
 .text--body {
-  font-family: $tertiary-font-family;
+  font-family: $primary-font-family;
+  font-weight: 300;
   line-height: $line-height;
-  letter-spacing: 1px;
   margin-bottom: $baseline-height;
 }
 .title--site {}
@@ -32,10 +38,12 @@ html, body {
   line-height: $line-height * 2;
   margin: $baseline-height*2 0;
   color: $black;
+  text-transform: uppercase;
 }
 .page__subtitle {
   font-family: $tertiary-font-family;
-  font-size: $base-font-size /2;
+  font-size: $base-font-size * (2/3);
+  font-weight: 300;
   color: $grey;
   letter-spacing: 1px;
   line-height: $line-height;
@@ -46,7 +54,6 @@ html, body {
 .list--unordered {
   list-style: none;
   font-family: $tertiary-font-family;
-  letter-spacing: 1px;
   padding: 0;
   margin: 0;
 //  background: transparentize(yellow, 0.7);

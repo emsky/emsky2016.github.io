@@ -17,7 +17,7 @@
   }
   .sidebar__toggle {
     display: block; // hide the menu button
-  } 
+  }
   .content {
     width: auto;
     margin-left: $sidebar-width;
@@ -28,7 +28,8 @@
     padding: $padding;
   }
   .page__title {
-    font-size: $base-font-size * 2.5;
+    font-size: $base-font-size * 3;
+    line-height: $line-height * 3;
   }
   .text--body {
     font-size: $base-font-size + 2;

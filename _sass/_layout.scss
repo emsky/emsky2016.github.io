@@ -72,8 +72,7 @@ body, html {
   font-size: $base-font-size * 1.5;
   line-height: $line-height * 1.5;
   margin-top: -$margin * 0.5;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-weight: 400;
 }
 .sidebar__footer {
   display: block;
@@ -119,14 +118,15 @@ body, html {
   margin-top: $baseline-height * 3;
   overflow-x: hidden;
 }
+.article-wrapper {
+  padding: 0 $padding/2;
+}
 .masthead {
-  display: inline-block;
+  display: block;
+  height:auto;
   position: relative;
 }
-.fluidimage::before {
-  position: absolute;
+.fluidimage {
   display: block;
-  height: 100%;
-  width: 100%;
-  background: transparentize($primary-color, 0.5);
+  vertical-align: baseline;
 }
