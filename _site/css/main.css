@@ -4558,6 +4558,12 @@ a .icon-flip-vertical:before {
   src: url("../fonts/HelveticaNeueCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCondensedBold.woff2") format("woff2"), url("../fonts/HelveticaNeueCondensedBold.woff") format("woff"), url("../fonts/HelveticaNeueCondensedBold.ttf") format("truetype"), url("../fonts/HelveticaNeueCondensedBold.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
+  font-family: 'Calendas';
+  src: url("../fonts/calendas-plus-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/calendas-plus-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas-plus-webfont.woff2") format("woff2"), url("../fonts/calendas-plus-webfont.woff") format("woff"), url("../fonts/calendas-plus-webfont.ttf") format("truetype"), url("../fonts/calendas-plus-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
   font-family: 'Technology-Icons';
   src: url("../fonts/technology-icons.eot");
   font-weight: normal;
