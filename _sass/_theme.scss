@@ -34,13 +34,13 @@ body, html {
   font-family: $tertiary-font-family;
   font-size: $base-font-size - 4;
   font-weight: 400;
-  color: $grey;
+  color: $subtle-text-color;
   line-height: $line-height;
   margin-left: $margin;
 }
 .thanks {
   font-size: 12px;
-  color: $grey;
+  color: $subtle-text-color;
   text-align: center;
   width: 100%;
 }

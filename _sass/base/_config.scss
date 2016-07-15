@@ -39,21 +39,28 @@ $red:   #C90E29; // Death Knight Red
 $yellow: #FFA348;
 
 $green: #45C15C;
-$orange: #FF851B;
+$orange: #EC4A32;
 
 // Gray Scale
 $white:  #fff;
 $silver: #F9FAFC;
 $grey:   #858B99;
 $grey-light: lighten($grey,80%);
-$black:  #4A4A4A;
+$grey-dark: #4A4A4A;
+$black:  #111122;
 
 // Project color variables
-$primary-color: $red;
-$secondary-color: #233e5b;
+$primary-color: $orange;
+$secondary-color: #233E5B;
 $tertiary-color: #aaa;
 
 $primary-text-color: $black;
+$secondary-text-color: $red;
+$tertiary-text-color: $grey-dark;
+$subtle-text-color: $grey;
+
+$text-link-color: $primary-color;
+$fancy-text-color: $primary-color;
 
 $danger-color: $red; // Bad color for errors, validation etc.
 $success-color: $green; // Good color for success etc.
