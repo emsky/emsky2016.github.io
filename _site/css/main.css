@@ -4594,7 +4594,7 @@ html, body {
   color: #111122; }
 
 .fancy {
-  font-family: Calendas;
+  font-family: Calendas, Georgia, "Times";
   font-style: italic;
   font-size: 18px;
   color: #EC4A32; }
@@ -4612,7 +4612,7 @@ html, body {
   margin-bottom: 20px; }
 
 .page__title {
-  font-family: "Work Sans", "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 28.8px;
   line-height: 40px;
   margin: 40px 0;
@@ -4620,7 +4620,7 @@ html, body {
   text-transform: uppercase; }
 
 .page__subtitle {
-  font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 10.66667px;
   font-weight: 300;
   color: #858B99;
@@ -4632,7 +4632,7 @@ html, body {
 
 .list--unordered {
   list-style: none;
-  font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   padding: 0;
   margin: 0; }
 
@@ -4709,7 +4709,7 @@ html, body {
   background: rgba(201, 14, 41, 0.15); }
 
 .heading--primary {
-  font-family: "Work Sans", "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   margin-top: 40px; }
@@ -5646,7 +5646,7 @@ body, html {
 
 .sidebar__header h1 {
   margin: 0;
-  font-family: "Work Sans", "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
   line-height: 30px;
   margin-top: -10px;
@@ -5739,7 +5739,7 @@ body, html {
   fill: #EC4A32 !important; }
 
 .profession {
-  font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #858B99;
