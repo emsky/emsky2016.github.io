@@ -14,10 +14,15 @@ $line-height: $baseline-height; // Consistent height for buttons, inputs etc.
 $transition-timing-fxn: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Base font settings
-$primary-font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$primary-font-family-bold: "Work Sans", "HelveticaNeue-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$secondary-font-family: "Work Sans", "HelveticaNeue-CondensedBold", "Impact", Helvetica, Arial, sans-serif;
-$tertiary-font-family: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif: Calendas, Georgia, "Times New Roman", serif;
+$font-sans-serif: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-mono: "Courier New", monospace;
+
+
+$primary-font-family: $font-sans-serif;
+$secondary-font-family: $font-serif;
+$tertiary-font-family: $font-sans-serif;
+$quaternary-font-family: $font-mono;
 $base-font-size: 16px;
 
 // Responsive breakpoints

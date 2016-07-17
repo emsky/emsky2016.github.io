@@ -13,7 +13,7 @@ html, body {
   color: $primary-text-color;
 }
 .fancy {
-  font-family: Calendas;
+  font-family: Calendas, Georgia, "Times";
   font-style: italic;
   font-size: $base-font-size + 2;
   color: $fancy-text-color;
@@ -131,7 +131,7 @@ html, body {
   background: $alpha-red;
 }
 .heading--primary {
-  font-family: $primary-font-family-bold;
+  font-family: $primary-font-family;
   font-size: $base-font-size - 2;
   text-transform: uppercase;
   margin-top: $baseline-height * 2;

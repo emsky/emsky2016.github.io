@@ -45,7 +45,7 @@ $(function(){
           $('.preloader').addClass('animated slideOutRight');
           $('.preloader').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){$(this).remove();});
           //$('.preloader').fadeOut(500,function(){$(this).remove();});
-        },2000);
+        },500);
       });
 
       // TECH ICON TEXT REVEALER
@@ -56,7 +56,7 @@ $(function(){
         });
       });
 
-      
+
 
 
     });
