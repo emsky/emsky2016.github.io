@@ -3078,8 +3078,8 @@ a .icon-flip-vertical:before {
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -3087,8 +3087,8 @@ a .icon-flip-vertical:before {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -4559,9 +4559,9 @@ a .icon-flip-vertical:before {
   /* Legacy iOS */ }
 @font-face {
   font-family: 'Calendas';
-  src: url("../fonts/calendas_plus-webfont.eot");
+  src: url("../fonts/Calendas Italic.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/calendas_plus-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/calendas_plus-webfont.woff2") format("woff2"), url("../fonts/calendas_plus-webfont.woff") format("woff"), url("../fonts/calendas_plus-webfont.ttf") format("truetype"), url("../fonts/calendas_plus-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/Calendas Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Calendas Italic.woff2") format("woff2"), url("../fonts/Calendas Italic.woff") format("woff"), url("../fonts/Calendas Italic.ttf") format("truetype"), url("../fonts/Calendas Italic.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'Technology-Icons';
@@ -4593,10 +4593,12 @@ html, body {
   line-height: 20px;
   color: #111122; }
 
+a {
+  text-decoration: none; }
+
 .fancy {
   font-family: Calendas, Georgia, "Times";
-  font-style: italic;
-  font-size: 18px;
+  font-size: 19px;
   color: #EC4A32; }
 
 .link--text {
@@ -5039,9 +5041,11 @@ table {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc; }
 
+/*
 label {
   display: block;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 
 input[type=text],
 input[type=email],
@@ -5050,53 +5054,163 @@ input[type=password],
 input[type=number],
 input[type=search],
 textarea {
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
+  border-radius: $btn-br;
   border: 1px solid #ccc;
-  height: 20px;
+  height: $line-height;
   outline: none;
   padding: 5px 10px;
-  width: 300px; }
-  input[type=text]:focus,
-  input[type=email]:focus,
-  input[type=phone]:focus,
-  input[type=password]:focus,
-  input[type=number]:focus,
-  input[type=search]:focus,
-  textarea:focus {
-    border-color: #EC4A32; }
-  input[type=text].full-width,
-  input[type=email].full-width,
-  input[type=phone].full-width,
-  input[type=password].full-width,
-  input[type=number].full-width,
-  input[type=search].full-width,
-  textarea.full-width {
-    width: 100%; }
+  width: 300px;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}
 
 textarea {
-  height: 60px; }
+  height: $line-height*3;
+}
 
 form {
-  margin-bottom: 20px; }
-  form .field {
-    margin-bottom: 10px; }
-  form .hint {
-    color: #858B99;
-    margin-top: 5px; }
-  form .is-required {
-    font-style: italic; }
-  form .has-error .error-description {
-    color: #C90E29;
-    margin-top: 5px; }
-  form .has-error input[type=text],
-  form .has-error input[type=email],
-  form .has-error input[type=phone],
-  form .has-error input[type=password],
-  form .has-error input[type=number],
-  form .has-error input[type=search],
-  form .has-error textarea {
-    border-color: #C90E29; }
+  margin-bottom: $padding;
+
+  // Wrap each form input/element in a field div
+  .field {
+    margin-bottom: $padding/2;
+  }
+
+  // Notes go under the input fields
+  .hint {
+    color: $subtle-color;
+    margin-top: 5px;
+  }
+
+  // Required label
+  .is-required {
+    font-style: italic;
+  }
+
+  // Validation, add error class to the item div
+  .has-error {
+
+    // Validation reason
+    .error-description {
+      color: $danger-color;
+      margin-top: 5px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=phone],
+    input[type=password],
+    input[type=number],
+    input[type=search],
+    textarea {
+      border-color: $danger-color;
+    }
+  }
+}
+ */
+.form__control {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 45px;
+  margin-bottom: 20px;
+  padding: 0;
+  box-sizing: border-box; }
+
+.form__label {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background: #111122;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  transition: 300ms background-color ease-in-out 100ms; }
+
+.form__input, .form__textarea {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 45px;
+  padding-left: 55px;
+  padding: 10px 10px 10px 55px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  border: 1px solid #111122;
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #111122;
+  transition: 300ms border-color ease-in-out 100ms; }
+
+.form__input:focus,
+.form__textarea:focus {
+  border-color: #EC4A32;
+  outline: 0; }
+
+.form__input:focus + .form__label,
+.form__textarea:focus + .form__label {
+  background-color: #EC4A32; }
+
+.form__submit {
+  display: block;
+  height: 45px;
+  background: #111122;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  border: 0;
+  float: right;
+  padding: 0 40px;
+  -webkit-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
+  transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1); }
+
+.form__submit:hover {
+  background: #EC4A32;
+  box-shadow: 0px 16px 15px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px); }
+
+.contact-form {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+  margin-bottom: 80px; }
+
+.contact-confirm {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms; }
+
+.confirm__title {
+  font-family: "Calendas", "Georgia", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding: 20px 0;
+  margin: 20px 0; }
+
+.contact-wrapper {
+  margin-top: 40px;
+  position: relative;
+  width: 100%; }
 
 .alert {
   zoom: 1;
@@ -5664,7 +5778,7 @@ body, html {
 .sidebar__toggle {
   display: block;
   position: fixed;
-  z-index: 99;
+  z-index: 109;
   top: 0;
   right: 0;
   width: 60px;

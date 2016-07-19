@@ -12,10 +12,12 @@ html, body {
   line-height: $line-height;
   color: $primary-text-color;
 }
+a {
+  text-decoration: none;
+}
 .fancy {
   font-family: Calendas, Georgia, "Times";
-  font-style: italic;
-  font-size: $base-font-size + 2;
+  font-size: $base-font-size + 3;
   color: $fancy-text-color;
 }
 .link--text {

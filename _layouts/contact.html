@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+
+    {% include preloader.html %}
+    {% include header.html %}
+    {% include sidebar.html %}
+
+    <div class="container content">
+      <!-- No masthead -->
+
+      <div class="article-wrapper">
+        <article>
+          <!-- Article/page title -->
+          <div class="page__head">
+            <h3 class="page__title">{{ page.article_title }}</h3>
+            <h4 class="page__subtitle">{{ page.article_subtitle }}</h4>
+          </div>
+
+          <!-- Article body -->
+          {{ page.content }}
+
+          <div class="contact-wrapper"><!-- Thank You Confirm -->
+              <div class="contact-confirm animated">
+                <h3 class="confirm__title">Thank you for reaching out!</h3>
+                <p class="text--body">Your message has been sent. I'll be in touch soon.</p>
+              </div>
+
+              <!-- Contact form -->
+              <div class="contact-form group animated">
+                <div class="form-wrapper span12">
+                  <form action="https://getsimpleform.com/messages?form_api_token=d6a71277a2aee51d4e800349a6433316" method="post" class="contact">
+                    <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
+                    <div class="form__control">
+                      <input class="form__input" type="text" name="name" placeholder="Your name" required />
+                      <label class="form__label" for="name"><i class="icon-user"></i></label>
+                    </div>
+                    <div class="form__control">
+                      <input class="form__input" type="email" name="email" placeholder="Your email" required />
+                      <label class="form__label" for="email"><i class="icon-envelope"></i></label>
+                    </div>
+
+                    <div class="form__control">
+                      <textarea class="form__textarea" name="message" id="" cols="30" rows="10" placeholder="Your message" required ></textarea>
+                      <label class="form__label" ffor="message"><i class="icon-comment"></i></label>
+                    </div>
+                    <input class="form__submit" type="submit" value="Send" />
+                  </form>
+                </div>
+              </div>
+
+            </div>
+
+        </article>
+      </div>
+
+    </div>
+
+    <script>
+
+      $('.contact').on('submit', function () {
+          console.log('Form submitted!');
+          $(".contact-form").addClass("fadeOut");
+          $(".contact-confirm").addClass("fadeInUp");
+          return false;
+      });
+
+      $(document).ready(function(){
+
+        function makeResponsive() {
+          var contentwidth = $(window).width();
+          var brk = 768;
+          var e = $(".form-wrapper");
+          var a = "span7";
+          var b = "span12";
+          if(contentwidth <= brk && e.hasClass(a)) {
+            e.removeClass(a).addClass(b);
+          } else if (contentwidth > 768 && e.hasClass(b)) {
+            e.removeClass(b).addClass(a);
+          } else {
+            console.log("All is well");
+          }
+        }
+
+        makeResponsive();
+
+        $(window).resize(makeResponsive);
+
+      });
+
+    </script>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
