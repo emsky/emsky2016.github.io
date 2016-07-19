@@ -5721,7 +5721,13 @@ body, html {
   background-size: cover;
   background-position-x: right;
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 500ms all ease-in-out 100ms;
+  transition: 500ms all ease-in-out 100ms; }
+
+.project:hover {
+  box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px); }
 
 .project__logo {
   display: block;
@@ -5740,7 +5746,7 @@ body, html {
   display: inline-block; }
 
 .project__bg {
-  display: block;
+  display: none;
   height: 160px;
   width: 100%;
   z-index: 102;
@@ -5776,7 +5782,7 @@ body, html {
   transition: 500ms transform ease-in-out; }
 
 .project__intro {
-  display: block;
+  display: none;
   position: relative;
   opacity: 0;
   width: 100%;
@@ -5901,7 +5907,7 @@ body, html {
   .newline {
     display: none; }
 
-  .project__intro {
+  .project__bg, .project__intro, .project__title {
     display: block; } }
 @media screen and (max-height: 460px) {
   .content {

@@ -143,6 +143,12 @@ body, html {
   background-position-x: right;
   background-blend-mode: multiply;
   background-color: rgba(0,0,0,0.4);
+  -webkit-transition: 500ms all ease-in-out 100ms;
+  transition: 500ms all ease-in-out 100ms;
+}
+.project:hover {
+  box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.40);
+  transform: translateY(-5px);
 }
 .project__logo {
   display: block;
@@ -168,7 +174,7 @@ body, html {
     display: inline-block;
 }
 .project__bg {
-  display: block;
+  display: none;
   height: $baseline-height * 8;
   width: 100%;
   z-index: 102;
@@ -205,7 +211,7 @@ body, html {
   transition: 500ms transform ease-in-out;
 }
 .project__intro {
-  display: block;
+  display: none;
   position: relative;
   opacity: 0;
   width: 100%;
