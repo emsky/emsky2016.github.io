@@ -37,6 +37,15 @@
   .list--grid {
     width: $baseline-height * 21;
   }
+  .project-pane {
+
+  }
+  .logo--nimbyx {}
+  .logo--evident {}
+  .logo--nav {}
+  .logo--jds {  }
+  .logo--sugarhabits {  }
+  .logo--bitehero {  }
 
 }
 
@@ -44,7 +53,11 @@
   .newline {
     display: none;
   }
+  .project__intro {
+    display: block;
+  }
 }
+
 
 @include responsiveheight(460px) {
   // e.g. iPhone 5 rendering screen is short

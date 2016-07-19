@@ -14,7 +14,7 @@ $line-height: $baseline-height; // Consistent height for buttons, inputs etc.
 $transition-timing-fxn: cubic-bezier(0.86, 0, 0.07, 1);
 
 // Base font settings
-$font-serif: Calendas, Georgia, "Times New Roman", serif;
+$font-serif: "Calendas", "Georgia", "Times New Roman", serif;
 $font-sans-serif: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-mono: "Courier New", monospace;
 
@@ -58,11 +58,13 @@ $black:  #111122;
 $primary-color: $orange;
 $secondary-color: #233E5B;
 $tertiary-color: #aaa;
+$inverted-color: $white;
 
 $primary-text-color: $black;
 $secondary-text-color: $red;
 $tertiary-text-color: $grey-dark;
 $subtle-text-color: $grey;
+$inverted-text-color: $white;
 
 $text-link-color: $primary-color;
 $fancy-text-color: $primary-color;

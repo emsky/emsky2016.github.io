@@ -49,12 +49,12 @@ $fonts-dir: '../fonts/';
 
 @font-face {
   font-family: 'Calendas';
-  src: url($fonts_dir+'calendas-plus-webfont.eot'); /* IE9 Compat Modes */
-  src: url($fonts_dir+'calendas-plus-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url($fonts_dir+'calendas-plus-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url($fonts_dir+'calendas-plus-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url($fonts_dir+'calendas-plus-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url($fonts_dir+'calendas-plus-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url($fonts_dir+'calendas_plus-webfont.eot'); /* IE9 Compat Modes */
+  src: url($fonts_dir+'calendas_plus-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url($fonts_dir+'calendas_plus-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url($fonts_dir+'calendas_plus-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url($fonts_dir+'calendas_plus-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url($fonts_dir+'calendas_plus-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
