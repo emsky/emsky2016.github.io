@@ -155,20 +155,12 @@ body, html {
   position: absolute;
   height: auto;
   width: auto;
-  max-height: 50%;
-  max-width: 80%;
+  max-width: 60%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 102;
 }
-.logo--nimbyx {}
-.logo--evident {}
-.logo--nav {}
-.logo--jds { }
-.logo--sugarhabits { }
-.logo--bitehero { }
-
 .project:before, .project__bg:before {
     content: '';
     display: inline-block;
