@@ -10,9 +10,11 @@
   }
   // Adjust line-height
   .text--body,
-  .list--unordered__item {
+  .list--unordered__item,
+  .list--unordered__item:before {
     line-height: $line-height * 1.5;
   }
+
 
   .header {
     display: none;

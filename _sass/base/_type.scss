@@ -70,8 +70,8 @@ a {
   font-family: FontAwesome;
   font-size: $base-font-size + 2;
   vertical-align: top;
-  height: $line-height * 1.5;
-  line-height: $line-height * 1.5;
+  height: $line-height;
+  line-height: $line-height;
   content: "\f105";
   color: $primary-color;
   position: absolute;

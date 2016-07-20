@@ -10,6 +10,14 @@
     {% include sidebar.html %}
 
     <div class="container content">
+      <!-- Page masthead -->
+        <section class="masthead masthead--error">
+          <img src="{{ page.masthead_src }}" />
+
+        </section>
+
+
+
       <div class="article-wrapper">
         <article>
           <!-- Article/page title -->
@@ -22,7 +30,6 @@
           {{ page.content }}
         </article>
       </div>
-    </div>
 
     {% include footer.html %}
 

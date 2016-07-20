@@ -4651,8 +4651,8 @@ a {
   font-family: FontAwesome;
   font-size: 18px;
   vertical-align: top;
-  height: 30px;
-  line-height: 30px;
+  height: 20px;
+  line-height: 20px;
   content: "\f105";
   color: #EC4A32;
   position: absolute;
@@ -6031,12 +6031,16 @@ body, html {
   text-align: center;
   width: 100%; }
 
+.masthead--error {
+  padding: 60px; }
+
 @media screen and (min-width: 768px) {
   html, body {
     font-size: 18px; }
 
   .text--body,
-  .list--unordered__item {
+  .list--unordered__item,
+  .list--unordered__item:before {
     line-height: 30px; }
 
   .header {
