@@ -62,6 +62,10 @@
     float: none;
     padding: 0;
   }
+  .project__logo {
+    max-height: 45%;
+    max-width: none;
+  }
 }
 
 @include mobilefirst(960px) {

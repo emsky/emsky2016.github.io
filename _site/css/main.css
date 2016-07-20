@@ -5786,8 +5786,7 @@ body, html {
   right: 0;
   width: 60px;
   height: 60px;
-  padding-top: 10px;
-  background: rgba(255, 255, 255, 0.7); }
+  padding-top: 10px; }
 
 .sidebar__toggle span {
   display: block;
@@ -5959,17 +5958,19 @@ body, html {
   flex-direction: column;
   text-align: center;
   flex: 1 1 30%;
-  background: rgba(201, 14, 41, 0.15);
   color: #111122; }
 
 .links__icon {
   font-size: 32px; }
 
 .links__label {
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400; }
 
 .links__desc {
-  margin-top: 5px; }
+  margin-top: 5px;
+  color: #858B99; }
 
 body, html {
   background-color: #F9FAFC; }
@@ -5995,7 +5996,9 @@ body, html {
 
 .sidebar {
   background-color: #fff;
-  border-right: 1px solid #858B99; }
+  -webkit-box-shadow: 1px 0 1px rgba(17, 17, 34, 0.1);
+  -moz-box-shadow: 1px 0 1px rgba(17, 17, 34, 0.1);
+  box-shadow: 1px 0 1px rgba(17, 17, 34, 0.1); }
 
 .logo--personal--med path {
   fill: #EC4A32 !important; }
@@ -6065,7 +6068,11 @@ body, html {
     margin-left: 0;
     margin-bottom: 20px;
     float: none;
-    padding: 0; } }
+    padding: 0; }
+
+  .project__logo {
+    max-height: 45%;
+    max-width: none; } }
 @media screen and (min-width: 960px) {
   .newline {
     display: none; }
