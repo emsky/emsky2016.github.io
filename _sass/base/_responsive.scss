@@ -41,14 +41,17 @@
   }
   .links--personal {
     flex-direction: column;
-    width: 25%;
+    width: 20%;
     padding: $padding;
     float: right;
     margin-left: $margin;
     margin-bottom: $margin;
   }
   .links__item {
-    padding: $padding/2;
+    padding: $padding $padding/2;
+  }
+  .fancy {
+    font-size: $base-font-size + 4;
   }
 }
 
@@ -63,7 +66,7 @@
     padding: 0;
   }
   .project__logo {
-    max-height: 45%;
+    max-height: 40%;
     max-width: none;
   }
 }

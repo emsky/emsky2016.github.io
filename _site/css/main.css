@@ -4601,7 +4601,7 @@ a {
 
 .fancy {
   font-family: Calendas, Georgia, "Times";
-  font-size: 19px;
+  font-size: 16px;
   color: #EC4A32; }
 
 .link--text {
@@ -5958,19 +5958,33 @@ body, html {
   flex-direction: column;
   text-align: center;
   flex: 1 1 30%;
-  color: #111122; }
+  color: #111122;
+  transition: 500ms all ease-in-out 100ms; }
+
+.links__item:hover {
+  -webkit-box-shadow: 0 15px 15px rgba(17, 17, 34, 0.3);
+  -moz-box-shadow: 0 15px 15px rgba(17, 17, 34, 0.3);
+  box-shadow: 0 15px 15px rgba(17, 17, 34, 0.3);
+  transform: translateY(-1px);
+  background: #fff; }
+
+.links__item:hover * {
+  color: #EC4A32; }
 
 .links__icon {
-  font-size: 32px; }
+  font-size: 32px;
+  transition: 500ms color ease-in-out 100ms; }
 
 .links__label {
   margin: 0;
   text-transform: uppercase;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: 500ms color ease-in-out 100ms; }
 
 .links__desc {
   margin-top: 5px;
-  color: #858B99; }
+  color: #858B99;
+  transition: 500ms color ease-in-out 100ms; }
 
 body, html {
   background-color: #F9FAFC; }
@@ -6052,14 +6066,17 @@ body, html {
 
   .links--personal {
     flex-direction: column;
-    width: 25%;
+    width: 20%;
     padding: 20px;
     float: right;
     margin-left: 20px;
     margin-bottom: 20px; }
 
   .links__item {
-    padding: 10px; } }
+    padding: 20px 10px; }
+
+  .fancy {
+    font-size: 20px; } }
 @media screen and (max-width: 768px) {
   .links--personal {
     flex-direction: row;
@@ -6071,7 +6088,7 @@ body, html {
     padding: 0; }
 
   .project__logo {
-    max-height: 45%;
+    max-height: 40%;
     max-width: none; } }
 @media screen and (min-width: 960px) {
   .newline {
