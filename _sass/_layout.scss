@@ -125,6 +125,8 @@ body, html {
   display: block;
   height:auto;
   position: relative;
+  max-height: 360px;
+  overflow: hidden;
 }
 .fluidimage {
   display: block;
@@ -250,3 +252,32 @@ body, html {
    border: 1px solid $inverted-color;
    padding: 0 $padding;
  }
+
+ /*
+ ** PERSONAL LINKS
+ */
+
+.links--personal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: $margin;
+}
+.links__item {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1 1 30%;
+  background: $alpha-red;
+  color: $primary-text-color;
+}
+.links__icon {
+  font-size: $base-font-size * 2;
+}
+.links__label {
+  margin: 0;
+}
+.links__desc {
+  margin-top: $margin/4;
+}

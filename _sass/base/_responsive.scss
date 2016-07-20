@@ -2,6 +2,8 @@
 // Responsive Styles
 //**
 
+
+
 @include mobilefirst($big-break) {
   html, body {
     font-size: $base-font-size + 2;
@@ -37,11 +39,29 @@
   .list--grid {
     width: $baseline-height * 21;
   }
-  .project-pane {
-
+  .links--personal {
+    flex-direction: column;
+    width: 25%;
+    padding: $padding;
+    float: right;
+    margin-left: $margin;
+    margin-bottom: $margin;
   }
-  
+  .links__item {
+    padding: $padding/2;
+  }
+}
 
+@include responsive($big-break) {
+  .links--personal {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: $margin;
+    float: none;
+    padding: 0;
+  }
 }
 
 @include mobilefirst(960px) {
@@ -74,4 +94,6 @@
   body {
     overflow-x: hidden;
   }
+
+
 }

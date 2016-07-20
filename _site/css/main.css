@@ -1782,6 +1782,9 @@ a .icon-flip-vertical:before {
 .icon-behance:before {
   content: "\f1b4"; }
 
+.icon-file-pdf-o:before {
+  content: "\f1c1"; }
+
 /* Technology Icons */
 [class^="icon-tech-"],
 [class*=" icon-tech-"] {
@@ -5817,7 +5820,9 @@ body, html {
 .masthead {
   display: block;
   height: auto;
-  position: relative; }
+  position: relative;
+  max-height: 360px;
+  overflow: hidden; }
 
 .fluidimage {
   display: block;
@@ -5939,6 +5944,33 @@ body, html {
   border: 1px solid #fff;
   padding: 0 20px; }
 
+/*
+** PERSONAL LINKS
+*/
+.links--personal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.links__item {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1 1 30%;
+  background: rgba(201, 14, 41, 0.15);
+  color: #111122; }
+
+.links__icon {
+  font-size: 32px; }
+
+.links__label {
+  margin: 0; }
+
+.links__desc {
+  margin-top: 5px; }
+
 body, html {
   background-color: #F9FAFC; }
 
@@ -6013,7 +6045,27 @@ body, html {
     font-size: 18px; }
 
   .list--grid {
-    width: 420px; } }
+    width: 420px; }
+
+  .links--personal {
+    flex-direction: column;
+    width: 25%;
+    padding: 20px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px; }
+
+  .links__item {
+    padding: 10px; } }
+@media screen and (max-width: 768px) {
+  .links--personal {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+    float: none;
+    padding: 0; } }
 @media screen and (min-width: 960px) {
   .newline {
     display: none; }
