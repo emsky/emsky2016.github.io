@@ -14,8 +14,6 @@
   .list--unordered__item:before {
     line-height: $line-height * 1.5;
   }
-
-
   .header {
     display: none;
   }
@@ -54,6 +52,9 @@
   }
   .fancy {
     font-size: $base-font-size + 4;
+  }
+  .masthead--error {
+    padding: $padding*3 0;
   }
 }
 
