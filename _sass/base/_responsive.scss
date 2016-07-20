@@ -59,11 +59,15 @@
   .links--personal {
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 0;
     margin-bottom: $margin;
     float: none;
     padding: 0;
+  }
+  .links__item {
+    padding-left: 0;
+    padding-right: 0;
   }
   .project__logo {
     max-height: 40%;

@@ -5950,14 +5950,14 @@ body, html {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 20px; }
 
 .links__item {
   display: inline-flex;
   flex-direction: column;
   text-align: center;
-  flex: 1 1 30%;
+  flex: 1 1 auto;
   color: #111122;
   transition: 500ms all ease-in-out 100ms; }
 
@@ -6081,11 +6081,15 @@ body, html {
   .links--personal {
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 0;
     margin-bottom: 20px;
     float: none;
     padding: 0; }
+
+  .links__item {
+    padding-left: 0;
+    padding-right: 0; }
 
   .project__logo {
     max-height: 40%;
