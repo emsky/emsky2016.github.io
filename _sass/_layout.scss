@@ -73,6 +73,7 @@ body, html {
   line-height: $line-height * 1.5;
   margin-top: -$margin * 0.5;
   font-weight: 400;
+  color: $primary-text-color;
 }
 .sidebar__footer {
   display: block;

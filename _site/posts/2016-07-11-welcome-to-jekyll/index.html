@@ -45,7 +45,7 @@
     <!-- Fixed Header -->
 <div class="header animated slideInDown eased">
   <div class="header__logo--small">
-    <img class="svg logo--personal--small center-vertical" src="/img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em">
+    <a href="/"><img class="svg logo--personal--small center-vertical" src="/img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em"></a>
     <h1>ELLESA SABASAJE</h1>
   </div>
 </div>
@@ -58,7 +58,6 @@
     <span></span>
   </a>
 </div>
- 
 
     <!-- Fixed sidebar in desktop and tablet, Sliding menu in mobile, static on home page -->
 
@@ -66,10 +65,10 @@
 <div class="sidebar animated slideOutLeft eased">
   <!-- Heading -->
   <header class="sidebar__header">
-    <div class="header__logo--normal">
-      <img class="svg logo--personal--med center-vertical" src="../img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em">
-      <h1>ELLESA SABASAJE</h1>
-    </div>
+      <a class="header__logo--normal" href="/">
+        <img class="svg logo--personal--med center-vertical" src="../img/logo.svg" width="30" height="30" alt="Anagram of my nickname Em-Em">
+        <h1 class="title--site">ELLESA SABASAJE</h1>
+      </a>
     <h2 class="profession">Front-End Developer<br>UX Designer</h2>
   </header>
 
@@ -196,7 +195,15 @@
     window.onload = function() {
       var sideBar = $('.sidebar');
       var menu = $('.sidebar__toggle');
-      console.log("LOADED");
+
+      console.log("%c*******************************\n" +
+                  "*******************************\n\n" +
+                  "  It is dangerous to go alone!\n"+
+                  "          Take this.\n\n"+
+                  "   ס₪₪₪₪§|(Ξ≥≤≥≤≥≤ΞΞΞΞΞΞΞΞΞΞ>\n\n"+
+                  "*******************************\n" +
+                  "*******************************\n\n", "font: monospace; color: blue;")
+
       if ($(window).width() >= 768){
         console.log("DETECTED: Tablet and above");
         if (sideBar.hasClass('slideOutLeft')) {

@@ -5768,7 +5768,8 @@ body, html {
   font-size: 24px;
   line-height: 30px;
   margin-top: -10px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #111122; }
 
 .sidebar__footer {
   display: block;

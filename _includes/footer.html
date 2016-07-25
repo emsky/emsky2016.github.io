@@ -66,7 +66,15 @@
     window.onload = function() {
       var sideBar = $('.sidebar');
       var menu = $('.sidebar__toggle');
-      console.log("LOADED");
+
+      console.log("%c*******************************\n" +
+                  "*******************************\n\n" +
+                  "  It is dangerous to go alone!\n"+
+                  "          Take this.\n\n"+
+                  "   ס₪₪₪₪§|(Ξ≥≤≥≤≥≤ΞΞΞΞΞΞΞΞΞΞ>\n\n"+
+                  "*******************************\n" +
+                  "*******************************\n\n", "font: monospace; color: blue;")
+
       if ($(window).width() >= 768){
         console.log("DETECTED: Tablet and above");
         if (sideBar.hasClass('slideOutLeft')) {
