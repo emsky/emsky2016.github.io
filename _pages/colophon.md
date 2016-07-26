@@ -38,7 +38,7 @@ I update and keep track of this project's progress with [Trello](https://trello.
 ### Images
 
 {:.text--body}
-To make the images adaptive, I wrote a custom script that points the page to the appropriate image based on the size of the screen. I own most of the images used on this site, except for the Galaga animation used in my [404 page](/404.html).
+To make the images adaptive, I wrote a custom script that points the page to the appropriate image based on the size of the screen. I own most of the images used on this site, except for the [Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders) animation used in my [404 page](/404.html).
 
 {:.heading--primary}
 ### Typography and Icons
