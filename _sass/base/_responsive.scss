@@ -17,8 +17,15 @@
   .header {
     display: none;
   }
+  .sidebar__header {
+    margin-bottom: $margin;
+  }
   .sidebar__toggle {
     display: block; // hide the menu button
+  }
+  .nav--main__item a {
+    height: $baseline-height * 3;
+    line-height: $line-height * 3;
   }
   .content {
     width: auto;
