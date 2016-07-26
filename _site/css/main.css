@@ -4537,30 +4537,6 @@ a .icon-flip-vertical:before {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'HelveticaNeue';
-  src: url("../fonts/HelveticaNeue.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.ttf") format("truetype"), url("../fonts/HelveticaNeue.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'HelveticaNeue-Bold';
-  src: url("../fonts/HelveticaNeueBold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/HelveticaNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueBold.woff2") format("woff2"), url("../fonts/HelveticaNeueBold.woff") format("woff"), url("../fonts/HelveticaNeueBold.ttf") format("truetype"), url("../fonts/HelveticaNeueBold.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'HelveticaNeue-Light';
-  src: url("../fonts/HelveticaNeueLight.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/HelveticaNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueLight.woff2") format("woff2"), url("../fonts/HelveticaNeueLight.woff") format("woff"), url("../fonts/HelveticaNeueLight.ttf") format("truetype"), url("../fonts/HelveticaNeueLight.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'HelveticaNeue-CondensedBold';
-  src: url("../fonts/HelveticaNeueCondensedBold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/HelveticaNeueCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCondensedBold.woff2") format("woff2"), url("../fonts/HelveticaNeueCondensedBold.woff") format("woff"), url("../fonts/HelveticaNeueCondensedBold.ttf") format("truetype"), url("../fonts/HelveticaNeueCondensedBold.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
   font-family: 'Calendas';
   src: url("../fonts/Calendas Italic.eot");
   /* IE9 Compat Modes */
@@ -4589,7 +4565,7 @@ a .icon-flip-vertical:before {
   font-weight: normal;
   font-style: normal; }
 html, body {
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4607,17 +4583,17 @@ a {
 .link--text {
   text-decoration: none;
   position: relative;
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #EC4A32; }
 
 .text--body {
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   line-height: 20px;
   margin-bottom: 20px; }
 
 .page__title {
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 28.8px;
   line-height: 40px;
   margin: 40px 0;
@@ -4625,7 +4601,7 @@ a {
   text-transform: uppercase; }
 
 .page__subtitle {
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 10.66667px;
   font-weight: 300;
   color: #858B99;
@@ -4637,7 +4613,7 @@ a {
 
 .list--unordered {
   list-style: none;
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   padding: 0;
   margin: 0; }
@@ -4715,8 +4691,8 @@ a {
   background: rgba(201, 14, 41, 0.15); }
 
 .heading--primary {
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
   margin-top: 40px; }
 
@@ -5154,7 +5130,7 @@ form {
   border: 0;
   background: transparent;
   border: 1px solid #111122;
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   color: #111122;
   transition: 300ms border-color ease-in-out 100ms; }
@@ -5764,7 +5740,7 @@ body, html {
 
 .sidebar__header h1 {
   margin: 0;
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
   line-height: 30px;
   margin-top: -10px;
@@ -6019,7 +5995,7 @@ body, html {
   fill: #EC4A32 !important; }
 
 .profession {
-  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #858B99;
