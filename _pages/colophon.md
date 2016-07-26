@@ -32,7 +32,7 @@ No frameworks were used in the creation of this site. I did use [SASS](http://sa
 ### Tools
 
 {:.text--body}
-I update and keep track of this project's progress with [Trello](https://trello.com/b/yFbZFW3E). For my local environment, I used [Codekit](https://incident57.com/codekit/) to automatically compile the Sass files, with [Livereload](http://livereload.com/) setup to work with the [XCode iOS Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) . My choice of IDE? Why, [Atom](https://atom.io/), of course &em; configured with [Terminal Plus](https://atom.io/packages/terminal-plus), [Emmet](http://emmet.io/) and [Power Mode](https://atom.io/packages/activate-power-mode).
+I update and keep track of this project's progress with [Trello](https://trello.com/b/yFbZFW3E). For my local environment, I used [Codekit](https://incident57.com/codekit/) to automatically compile the Sass files, with [Livereload](http://livereload.com/) setup to work with the [XCode iOS Simulator](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) . My choice of IDE? Why, [Atom](https://atom.io/), of course &mdash; configured with [Terminal Plus](https://atom.io/packages/terminal-plus), [Emmet](http://emmet.io/) and [Power Mode](https://atom.io/packages/activate-power-mode).
 
 {:.heading--primary}
 ### Images
