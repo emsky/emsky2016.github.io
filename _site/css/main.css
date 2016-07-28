@@ -6067,7 +6067,7 @@ body, html {
     font-size: 20px; }
 
   .masthead--error {
-    padding: 60px 0; } }
+    padding: 60px; } }
 @media screen and (max-width: 768px) {
   .links--personal {
     flex-direction: row;
