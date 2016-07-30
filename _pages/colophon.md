@@ -10,7 +10,7 @@ permalink: /colophon/index.html
 So I guess you want to know more about what makes this site tick, huh?
 
 {:.text--body}
-It's undergoing an open redesign and is a [work in progress](https://trello.com/b/yFbZFW3E), so if it looks strange, that's why.
+It's undergoing an open redesign and is a [work in progress](https://trello.com/b/yFbZFW3E), so if it looks strange, that's why. If you're interested, here's my [Trello board for this project](https://trello.com/b/yFbZFW3E).
 
 {:.text--body}
 It's built on top of [Jekyll](https://github.com/jekyll/jekyll), a static site compiler powered by the [Liquid](https://shopify.github.io/liquid/) templating engine. This site is hosted on [Github Pages](https://pages.github.com/).
