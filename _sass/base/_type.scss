@@ -15,6 +15,7 @@ html, body {
 a {
   text-decoration: none;
 }
+
 .fancy {
   font-family: Calendas, Georgia, "Times";
   font-size: $base-font-size;
@@ -26,7 +27,6 @@ a {
     font-family: $primary-font-family;
     color: $text-link-color;
 }
-
 .text--body {
   font-family: $primary-font-family;
   font-weight: 300;

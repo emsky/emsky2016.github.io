@@ -6,7 +6,7 @@
 
 @include mobilefirst($big-break) {
   html, body {
-    font-size: $base-font-size + 2;
+    font-size: $base-font-size;
   }
   // Adjust line-height
   .text--body,
@@ -24,8 +24,8 @@
     display: block; // hide the menu button
   }
   .nav--main__item a {
-    height: $baseline-height * 3;
-    line-height: $line-height * 3;
+    line-height: $baseline-height * 2.5;
+    height: $baseline-height * 2.5;
   }
   .content {
     width: auto;
@@ -41,7 +41,7 @@
     line-height: $line-height * 3;
   }
   .text--body {
-    font-size: $base-font-size + 2;
+    font-size: $base-font-size;
   }
   .list--grid {
     width: $baseline-height * 21;
