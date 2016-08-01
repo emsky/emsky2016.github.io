@@ -21,7 +21,7 @@ body, html {
   height: 30px;
   float: left;
   margin-left: $margin;
-  margin-top: 30px;
+  margin-top: $margin * 1.5;
 }
 .header__logo--small h1 {
   display: block;
@@ -90,7 +90,7 @@ body, html {
   right: 0;
   width: $baseline-height * 3;
   height: $baseline-height * 3;
-  padding-top: $padding / 2;
+  padding-top: $padding * 0.75;
 }
 .sidebar__toggle span {
   display: block;
@@ -115,33 +115,28 @@ body, html {
   width: 100%;
   height: 100%; // Testing
   margin-top: $baseline-height * 3;
-  overflow-x: hidden;
 }
 .article-wrapper {
   padding: 0 $padding/2;
 }
 .masthead {
   display: block;
-  height:auto;
-  position: relative;
-  max-height: 360px;
-  overflow: hidden;
-}
-.masthead__overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-height: 30vh;
   width: 100%;
-  height: auto;
-  background: #FF5F6D; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FF5F6D , #FFC371); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FF5F6D , #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  position: relative;
+  height: 30vh;
+}
+.parallax__img {
+   position: relative;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% auto;
+   will-change: transform;
 }
 .fluidimage {
-  display: block;
   vertical-align: baseline;
+  background-repeat: no-repeat;
 }
 .projects {
   padding-top: $baseline-height;
@@ -286,7 +281,8 @@ body, html {
 .links__item:hover {
   @include box-shadow(0, 15px, 15px, transparentize($black, 0.7));
   transform: translateY(-1px);
-  background: $white;
+//  @include transition(border, $transition-timing-fxn);
+//  background: $primary-color;
 }
 .links__item:hover * {
   color: $primary-color;

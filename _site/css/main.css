@@ -5702,7 +5702,7 @@ body, html {
   height: 30px;
   float: left;
   margin-left: 24px;
-  margin-top: 30px; }
+  margin-top: 36px; }
 
 .header__logo--small h1 {
   display: block;
@@ -5770,7 +5770,7 @@ body, html {
   right: 0;
   width: 72px;
   height: 72px;
-  padding-top: 12px; }
+  padding-top: 18px; }
 
 .sidebar__toggle span {
   display: block;
@@ -5794,36 +5794,29 @@ body, html {
   display: block;
   width: 100%;
   height: 100%;
-  margin-top: 72px;
-  overflow-x: hidden; }
+  margin-top: 72px; }
 
 .article-wrapper {
   padding: 0 12px; }
 
 .masthead {
   display: block;
-  height: auto;
-  position: relative;
-  max-height: 360px;
-  overflow: hidden; }
-
-.masthead__overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-height: 30vh;
   width: 100%;
-  height: auto;
-  background: #FF5F6D;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #FF5F6D, #FFC371);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #FF5F6D, #FFC371);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  position: relative;
+  height: 30vh; }
+
+.parallax__img {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  will-change: transform; }
 
 .fluidimage {
-  display: block;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  background-repeat: no-repeat; }
 
 .projects {
   padding-top: 24px; }
@@ -5963,8 +5956,7 @@ body, html {
   -webkit-box-shadow: 0 15px 15px rgba(17, 17, 34, 0.3);
   -moz-box-shadow: 0 15px 15px rgba(17, 17, 34, 0.3);
   box-shadow: 0 15px 15px rgba(17, 17, 34, 0.3);
-  transform: translateY(-1px);
-  background: #fff; }
+  transform: translateY(-1px); }
 
 .links__item:hover * {
   color: #EC4A32; }
@@ -6086,6 +6078,14 @@ body, html {
 
   .fancy {
     font-size: 22px; }
+
+  .masthead {
+    margin-top: 0;
+    height: 40vh; }
+
+  .parallax__img {
+    background-size: cover;
+    background-position: -100px -200px; }
 
   .masthead--error {
     padding: 72px; } }

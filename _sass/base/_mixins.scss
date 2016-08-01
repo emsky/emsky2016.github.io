@@ -34,6 +34,14 @@
   box-shadow: $horizontal $vertical $blur $color;
 }
 
+// Transitions
+
+@mixin transition($element: all, $timing: $transition-timing-fxn) {
+  -webkit-transition: 0.5s $element $timing;
+  -o-transition: 0.5s $element $timing;
+  transition: 0.5s $element $timing;
+}
+
 
 // Responsive mixins
 @mixin responsive($res) {

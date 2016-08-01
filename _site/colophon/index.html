@@ -180,16 +180,25 @@
           var contentwidth = $(window).width();
           var brksm = '375';
           var brklg = '960';
-          var served = $('.fluidimage').first().attr('src').substr(this.length - 7).substr(0,3);
+
+          // get url suffix
+          var served = $('.fluidimage').first().attr('data-image').substr(this.length - 7).substr(0,3);
           var nw  = (contentwidth < brksm) ? '@sm' : ((contentwidth >= brklg) ? '@lg' : '@md');
 
+          console.log("Image URL: " + $('.fluidimage').first().attr('data-image'));
 
           // replace only if breakpoint was crossed
-
           if (served != nw) {
             $('.fluidimage').each(function(){
-                var newSrc = $(this).attr('src').replace(served, nw);
-                $(this).attr('src', newSrc);
+                var newSrc;
+                // if parallax, replace the data-image, else just replace the image src
+                if ($(this).hasClass('parallax__img')) {
+                  newSrc = $(this).attr('data-image').replace(served, nw);
+                  $(this).css('background-image', 'url(' + newSrc + ')');
+                } else {
+                  newSrc = $(this).attr('src').replace(served, nw);
+                  $(this).attr('src', newSrc);
+                }
             });
           }
         }
