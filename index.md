@@ -1,9 +1,11 @@
 ---
 layout: home
 masthead_src: img/001-portrait@md.jpg
-greeting: "Bal'a dash malanore!"
-greeting_trans: "Greetings, traveler!"
 ---
+{:.page__title}
+Holistic digital product designer —<br />
+experienced with <br /><span class="effect--typed">strategy</span>
+
 {:.text--body}
 My name is Ellesa and I’m a user experience <span class="fancy">designer</span> and front-end <span class="fancy">developer</span> based in Manila. I focus on designing and shipping applications that offer users an enjoyable, meaningful experience.
 

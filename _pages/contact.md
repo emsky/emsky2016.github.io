@@ -10,9 +10,9 @@ I'm currently available for contract or full-time work. I would love to hear fro
 
 {:.text--body}
 uxellesa@gmail.com    
-+63 905 526 1041    
-+632 718 5372    
-Manila, Philippines    
++63 928 550 4378    
+Makati, Metro Manila
+Philippines    
 [LinkedIn](http://www.linkedin.com/in/ellesa) &#149;
 [Github](https://www.github.com/emsky) &#149;
 [Codepen](https://www.codepen.io/ezakaze) &#149; [Facebook](https://www.facebook.com/ellesa.sabasaje) &#149;
