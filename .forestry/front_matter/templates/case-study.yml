@@ -11,5 +11,8 @@ fields:
 - type: text
   name: layout
   label: Layout
+- type: text
+  label: permalink
+  name: permalink
 pages:
 - case-study-epldt.md
