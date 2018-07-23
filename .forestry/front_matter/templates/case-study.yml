@@ -8,3 +8,5 @@ fields:
   label: article_title
   config:
     required: true
+pages:
+- case-study-epldt.md
