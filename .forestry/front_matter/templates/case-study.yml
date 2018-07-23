@@ -8,5 +8,8 @@ fields:
   label: article_title
   config:
     required: true
+- type: text
+  name: layout
+  label: Layout
 pages:
 - case-study-epldt.md
