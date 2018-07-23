@@ -14,5 +14,8 @@ fields:
 - type: text
   label: permalink
   name: permalink
+- type: text
+  name: article_subtitle
+  label: article_subtitle
 pages:
 - case-study-epldt.md
