@@ -1,0 +1,10 @@
+---
+label: Case Study
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: article_title
+  label: article_title
+  config:
+    required: true
