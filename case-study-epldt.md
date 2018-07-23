@@ -1,7 +1,7 @@
 ---
 title: Case Study - ePLDT
 date: 2018-07-23 17:37:29 +0000
-article_title: Redesigning the Enterprise Experience
+article_title: ePLDT
 layout: default
 permalink: "/work/epldt"
 
