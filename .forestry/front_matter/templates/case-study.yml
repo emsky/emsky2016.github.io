@@ -1,0 +1,21 @@
+---
+label: Case Study
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: article_title
+  label: article_title
+  config:
+    required: true
+- type: text
+  name: layout
+  label: Layout
+- type: text
+  label: permalink
+  name: permalink
+- type: text
+  name: article_subtitle
+  label: article_subtitle
+pages:
+- case-study-epldt.md
